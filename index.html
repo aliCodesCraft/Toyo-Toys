@@ -5,162 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #breadcrumb {
-            display: none;
-        }
-
-        .product-header {
-            display: none;
-
-        }
-
-        *::selection {
-            background: none;
-        }
-
-        .details {
-
-            display: flex;
-            gap: 10px;
-            margin-left: 10px;
-            flex-wrap: wrap;
-
-        }
-
-        .pics {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .big {
-
-            background-color: burlywood;
-            width: 300px;
-            height: 350px;
-            cursor: pointer;
-            box-shadow: 0px 7px 10px 1px rgba(0, 0, 0, 0.897);
-        }
-
-        .small {
-            width: 300px;
-            height: 150px;
-            display: flex;
-            gap: 5px;
-            justify-content: center;
-        }
-
-        .smallPic {
-
-            background-color: burlywood;
-            width: 70px;
-            height: 70px;
-            cursor: pointer;
-            box-shadow: 0px 7px 10px 1px rgba(0, 0, 0, 0.897);
-
-        }
-
-        .smallPic:hover {
-            border: 2px solid #284358;
-        }
-
-        .smallPic img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            cursor: pointer;
-        }
-
-        .info {
-            width: 370px;
-            /* height: 300px; */
-            margin-top: 30px;
-            cursor: pointer;
-            color: rgba(0, 0, 0, 0.897);
-        }
-
-        .info h1 {
-            color: #284358;
-        }
-
-        @media screen and (max-width:685px) {
-            .info {
-                margin-top: 10px;
-                width: 100%;
-            }
-
-            .pics {
-                flex-direction: row;
-                align-items: center;
-            }
-
-            .small {
-                flex-direction: column;
-            }
-
-        }
-    </style>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
+    <!-- ==========Header Start========== -->
+    <header>
 
-    <div class="details">
-
-        <div class="pics">
-            <div class="big">
-                <div class="main-img">
-                    <img src="assets/images/shop/colors (2).png" alt="" width="300px" id="mainImage">
-                </div>
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="socials">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
             </div>
-            <div class="small">
-                <div class="smallPic">
-                    <img src="assets/images/shop/colors (1).png" alt="" class="s-images"
-                        onmouseover="changeImage(this)">
-                </div>
-                <div class="smallPic">
-                    <img src="assets/images/shop/colors (2).png" alt="" class="s-images"
-                        onmouseover="changeImage(this)">
-                </div>
-                <div class="smallPic">
-                    <img src="assets/images/shop/colors (3).png" alt="" class="s-images"
-                        onmouseover="changeImage(this)">
-                </div>
-                <div class="smallPic">
-                    <img src="assets/images/shop/colors (4).png" alt="" class="s-images"
-                        onmouseover="changeImage(this)">
-                </div>
+            <div class="discount">
+                <P><b>FREE SHIPPING</b> THIS WEEK ORDER OVER - 3000 PKR</P>
+            </div>
+            <div class="currency">
+                <select>
+                    <option value="">PKR</option>
+                    <option value="">USD</option>
+                </select>
             </div>
         </div>
 
-        <div class="info">
-            <p>Home / Polo-Shirt</p>
-            <h1>Classic Polo-Shirt</h1>
-            <h3>Product Details</h3>
-            <p>"Classic old polo T-shirt, timeless style with a premium cotton blend, comfortable fit, ribbed collar,
-                and versatile design for casual or semi-formal wear."</p>
-            <div class="sora_product_item_price item_price show"><b>Price:</b><span
-                    class="sora_product_price meta-price"></span></div>
-            <div class="sora-product-buy-buttons">
-                <a class="item_add" href="javascript:;"><span class="add_product"><i class="fa fa-cart-plus"></i>Add to
-                        Cart</span><span class="product_added"><i class="fa fa-check"></i>Product Added</span></a>
-                <a class="sora-cart-view" href="/p/cart.html"><i class="fa fa-eye"></i>View Cart</a>
-                <a class="sora-cart-payment" href="/p/place-order.html"><i class="fa fa-credit-card"></i>Place Order</a>
+        <!-- Header Main -->
+        <div class="header-main">
+            
+            <!-- Bars -->
+            <!-- Logo -->
+            <div class="logo">
+                <div class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                 </div>
+                <h1>Toyo Shop</h1>
+            </div>
+
+            <!-- Nabar -->
+            <div class="navbar">
+                <nav>
+                    <ol>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Gallery</a></li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!-- User Action -->
+            <div class="user-action">
+                <ul>
+                    <li><i class="fa-solid fa-user"></i></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-solid fa-bag-shopping"></i></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- ==========Header End========== -->
+
+    <!-- ==========Mobile Nav Start========== -->
+    <div class="mobile-container">
+        <div class="mobile-nav">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>Toyo Shop</h1>
+            </div>
+            <div class="tabs">
+                <ol>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Gallery</a></li>
+                </ol>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+            </div>
+            <div class="cross-nav">
+                <i class="fa-solid fa-xmark"></i>
             </div>
         </div>
     </div>
-    </div>
 
-    </div>
 
-    <script>
-        let mainImage = document.getElementById("mainImage")
 
-        function changeImage(smallImage) {
-            mainImage.src = smallImage.src;
-        }
-    </script>
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
