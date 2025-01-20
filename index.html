@@ -7,11 +7,13 @@
     <title>Document</title>
     <!-- CSS Link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Media Queries Link -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Font Awesome Link -->
-    <!-- <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -59,7 +61,7 @@
                 <ul>
                     <li><i class="fa-solid fa-user"></i></li>
                     <li><i class="fa-solid fa-heart"></i></li>
-                    <li><i class="fa-solid fa-bag-shopping"></i></li>
+                    <li><i class="fa-solid fa-bag-shopping myCart"></i></li>
                 </ul>
             </div>
         </div>
@@ -85,7 +87,7 @@
                 <li class="bars"><i class="fa-solid fa-bars"></i></li>
                 <li><i class="fa-solid fa-user"></i></li>
                 <li><i class="fa-solid fa-heart"></i></li>
-                <li><i class="fa-solid fa-bag-shopping"></i></li>
+                <li><i class="fa-solid fa-bag-shopping myCart"></i></li>
             </ol>
         </div>
     </div>
@@ -122,98 +124,532 @@
     </div>
     <!-- ==========Mobile Nav END========== -->
 
-    <!-- ==========Banner Start========== -->
-
-        <!-- <div class="banner">
-            <div class="slider-container has-scrollvar">
-
-                <div class="slider-item">
-                    <img src="assets/images/slider/slider (2).png" alt="">
-
-                    <div class="banner-content">
-                        <p class="banner-heading">Trending Items</p>
-
-                        <h2 class="banner-title">Kid's <br>lateast <br>fashion style</h2>
-
-                        <p class="banner-price">Starting at PKR <b>300.00</b></p>
-
-                        <a href="" class="banner-btn">Shop Now</a>
-                    </div>
-                </div>
-                
-
-                <div class="slider-item">
-                    <img src="assets/images/slider/slider (2).png" alt="">
-
-                    <div class="banner-content">
-                        <p>Trending Items</p>
-
-                        <h2>Kid's lateast fashion style</h2>
-
-                        <p>Starting at PKR <b>300.00</b></p>
-
-                        <a href="" class="banner-btn">Shop Now</a>
-                    </div>
-                </div>
-                
-
-                <div class="slider-item">
-                    <img src="assets/images/logos/banner-1.jpg" alt="">
-
-                    <div class="banner-content">
-                        <p>Trending Items</p>
-
-                        <h2>Kid's lateast fashion style</h2>
-
-                        <p>Starting at PKR <b>300.00</b></p>
-
-                        <a href="" class="banner-btn">Shop Now</a>
-                    </div>
-                </div>
-                
+    <!-- ==========Cart Container Start========== -->
+    <div class="cart-container">
+        <div class="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-content">
+            <div class="cart-pic">
+                <img src="assets/images/products/Hair-Wax.png" alt="">
             </div>
-        </div> -->
+            <div class="cart-info">
+                <p><b>Hair Wax</b><br>PKR 1500</p>
+            </div>
+            <div class="multiply">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="cart-price">
+                <input type="number" value="1">
+            </div>
+            <div class="cart-total">
+                <p><b>Total</b><br>PKR 1500</p>
+            </div>
+            <div class="del">
+                <i class="fa-solid fa-trash"></i>
+            </div>
+        </div>
+    </div>
+    <!-- ==========Cart Container End========== -->
 
-        <div class="slider">
-            <div class="slider-top">
-                <!-- Backgound using css
+
+    <!-- ==========Slider Start========== -->
+
+    <div class="slider">
+        <div class="slider-top">
+            <!-- Backgound using css
                   -->
-            </div>
+        </div>
 
-                <div class="slider-content">
-                    <div class="content-text">
-                        <h2>Best Kids Store <br>&amp; Online Shop</h2>
-                        <p>Give The Gift Of Your Children Everyday</p>
-                        <a href="shop.php" class="btn-theme">Shop Now</a>
-                    </div>
-                    <div class="content-pic">
-                        <img src="assets/images/slider/2.png" alt="">
-                    </div>
+        <div class="slider-content">
+            <div class="content-text">
+                <h2>Best Kids Store <br>&amp; Online Shop</h2>
+                <p>Give The Gift Of Your Children Everyday</p>
+                <a href="shop.php" class="btn-theme">Shop Now</a>
+            </div>
+            <div class="content-pic">
+                <img src="assets/images/slider/2.png" alt="">
+            </div>
+        </div>
+
+        <div class="slider-bottom">
+            <img src="assets/images/slider/pp (2).png" alt="">
+        </div>
+    </div>
+
+
+    <!-- ==========Slider End========== -->
+
+    <!-- ==========New Arrivals Start========== -->
+
+    <div class="heading">
+        <h2>New Arrivals</h2>
+    </div>
+    <div class="cards">
+        <!-- Card-1 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/ben2.png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
                 </div>
-
-            <div class="slider-bottom">
-                <img src="assets/images/slider/pp (2).png" alt="">
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Ben-10 Action Figure</a>
+                <div class="price">
+                    <p>PKR 450.00</p>
+                </div>
             </div>
         </div>
 
-        <div class="featured">
+        <!-- Card-1 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/ben2.png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Ben-10 Action Figure</a>
+                <div class="price">
+                    <p>PKR 450.00</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card-1 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/ben2.png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Ben-10 Action Figure</a>
+                <div class="price">
+                    <p>PKR 450.00</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card-1 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/ben2.png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Ben-10 Action Figure</a>
+                <div class="price">
+                    <p>PKR 450.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <div class="featured-item">
-                <img src="assets/images/featured items/delivery.png" alt="">
-                <h2>Free Shipping</h2>
-            </div>
-            <div class="featured-item">
-                <img src="assets/images/featured items/hours.png" alt="">
-                <h2>24 Hours Services</h2>
-            </div>
-            <div class="featured-item">
-                <img src="assets/images/featured items/payment.png" alt="">
-                <h2>Secure Payment</h2>
-            </div>
+    <!-- ==========New Products End========== -->
 
+    <!-- ==========Age Group Start========== -->
+    <div class="heading">
+        <h2>Shop By Age</h2>
+    </div>
+
+    <div class="age">
+        <div class="age-groups">
+            <img src="assets/images/Age Group/Toys-for-1-year-old-kids.webp" alt="">
+        </div>
+        <div class="age-groups">
+            <img src="assets/images/Age Group/Toys-for-2-year-old-kids.webp" alt="">
+        </div>
+        <div class="age-groups">
+            <img src="assets/images/Age Group/Toys-for-3-year-old-kids.webp" alt="">
+        </div>
+        <div class="age-groups">
+            <img src="assets/images/Age Group/Toys-for-4-year-old-kids.webp" alt="">
+        </div>
+        <div class="age-groups">
+            <img src="assets/images/Age Group/Toys-for-5-year-old-kids.webp" alt="">
+        </div>
+        <div class="age-groups">
+            <img src="assets/images/Age Group/Toys-for-6-year-old-kids.webp" alt="">
+        </div>
+        <div class="age-groups">
+            <img src="assets/images/Age Group/Toys-for-7-year-old-kids.webp" alt="">
+        </div>
+        <div class="age-groups">
+            <img src="assets/images/Age Group/Toys-for-8-year-old-kids.webp" alt="">
+        </div>
+    </div>
+    <!-- ==========Age Group End========== -->
+
+    <!-- ==========Top Products Start========== -->
+
+    <div class="heading">
+        <h2>Top Selling Products</h2>
+    </div>
+    <div class="cards">
+        <!-- Card-1 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/ben2.png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Ben-10 Action Figure</a>
+                <div class="price">
+                    <p>PKR 450.00</p>
+                </div>
+            </div>
         </div>
 
+        <!-- Card-1 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/ben2.png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Ben-10 Action Figure</a>
+                <div class="price">
+                    <p>PKR 450.00</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card-1 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/ben2.png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Ben-10 Action Figure</a>
+                <div class="price">
+                    <p>PKR 450.00</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card-1 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/ben2.png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Ben-10 Action Figure</a>
+                <div class="price">
+                    <p>PKR 450.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="cards">
+        <!-- Card-1 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/ben2.png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Ben-10 Action Figure</a>
+                <div class="price">
+                    <p>PKR 450.00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card-1 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/ben2.png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Ben-10 Action Figure</a>
+                <div class="price">
+                    <p>PKR 450.00</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card-1 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/ben2.png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Ben-10 Action Figure</a>
+                <div class="price">
+                    <p>PKR 450.00</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card-1 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/ben2.png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Ben-10 Action Figure</a>
+                <div class="price">
+                    <p>PKR 450.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========Top Products End========== -->
+
+    <!-- ==========Brands Start========== -->
+    <div class="heading">
+        <h2>Shop By Brands</h2>
+    </div>
+
+    <div class="brands">
+        <div class="brand">
+            <img src="assets/images/Brands/marvel.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="assets/images/Brands/beyblade.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="assets/images/Brands/hasbro.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="assets/images/Brands/dinoco.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="assets/images/Brands/lego.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="assets/images/Brands/bandai.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="assets/images/Brands/pony.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="assets/images/Brands/dbz.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="assets/images/Brands/barbie.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="assets/images/Brands/mario.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="assets/images/Brands/disnry.png" alt="">
+        </div>
+        <div class="brand">
+            <img src="assets/images/Brands/ben10.png" alt="">
+        </div>
+    </div>
+    <!-- ==========Brands End========== -->
+
+        <!-- ==========Ads Start========== -->
+
+        <div class="adsBanner">
+            <div class="add1">
+                <img src="assets/images/Ad Banners/toy.jpg" alt="">
+            </div>
+        </div>
+    
+        <!-- ==========Ads End========== -->
+
+        <!-- ==========Testominals Start========== -->
+
+        <div class="testominals">
+            
+        </div>
+
+        <!-- ==========Testominals End========== -->
+
+
+
+
+    <div class="featured">
+
+        <div class="featured-item">
+            <img src="assets/images/featured items/delivery.png" alt="">
+            <h2>Free Shipping</h2>
+        </div>
+        <div class="featured-item">
+            <img src="assets/images/featured items/hours.png" alt="">
+            <h2>24 Hours Services</h2>
+        </div>
+        <div class="featured-item">
+            <img src="assets/images/featured items/payment.png" alt="">
+            <h2>Secure Payment</h2>
+        </div>
+
+    </div>
+
+
+    <footer>
+
+    </footer>
 
     <script src="assets/js/jquery-3.7.1.js"></script>
     <script src="assets/js/script.js"></script>

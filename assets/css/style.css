@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style-type: none;
-    font-family: "Poppins" ,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Rubik", serif;
+}
+
+body{
+    font-family: "Fredoka", serif;
 }
 
 header .header-top{
@@ -132,7 +139,7 @@ header .header-top{
 
 
 .bottom-nav {
-    max-width: 400px;
+    max-width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -143,7 +150,7 @@ header .header-top{
 }
 
 .bottom-nav ol{
-    box-shadow: 0px 7px 10px 1px rgba(0, 0, 0, 0.897);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.897);
     background-color: white;
     display: flex;
     justify-content: space-evenly;
@@ -186,6 +193,7 @@ header .header-top{
     flex-direction: column;
     font-size: large;
     color: white;
+    z-index: 100;
 
 }
 
@@ -217,7 +225,7 @@ header .header-top{
 }
 
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     
     .bottom-nav{
         display: block;
@@ -296,11 +304,108 @@ header .header-top{
 
     .bottom-nav ol{
         /* font-size: small; */
-        justify-content: center;
+        /* justify-content: center;
         gap: 12px;
     }
 
+}  */
+
+
+.cart{
+    margin-right: 30px;
+    font-size: larger;
 }
+
+.cart a{
+    color: rgba(0, 0, 0, 0.897);
+    font-size: larger;
+    padding: 2px;
+}
+
+.cart a:hover{
+    background-color: rgba(0, 0, 0, 0.897);
+    color: white;
+    border-radius: 6px;
+}
+
+.cart-container{
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.897);
+    z-index: 1000;
+    width: 400px;
+    padding: 10px;
+    height: auto;
+    /* background-color: rgb(253, 246, 246); */
+    background-color: white;
+    border-radius: 6px;
+}
+
+.cart-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 15px; */
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.cart-pic{
+    width: 90px;
+    height: 90px;
+}
+
+
+.cart-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-info{
+    display: flex;
+    text-align: center;
+    font-size: small;
+    align-self: center;
+    width: 100px;
+    height: 35px;
+}
+
+.cart-price{
+    height: 20px;
+}
+
+.cart-container input{
+    width: 40px;
+    height: 20px;
+}
+
+.cart-total{
+    /* width: 50px; */
+    font-size: small;
+    height: 30px;
+    text-align: center;
+
+}
+
+.multiply{
+    margin-left: -40px;
+}
+
+.closeCart{
+    text-align: right;
+    font-size: large;
+    margin: 10px;
+}
+
+
+
+
+
+
 
 
 .slider{
@@ -314,7 +419,7 @@ header .header-top{
     background-image: url(../images/slider/pp\ \(1\).png);
     width: 100%;
     height: 55px;
-    object-fit: cover;
+    /* object-fit: cover; */
     background-repeat: no-repeat;
 }
 
@@ -372,202 +477,159 @@ header .header-top{
     background-repeat: no-repeat;
     object-fit: cover;
     position: absolute;
-    bottom: 0px;
+    bottom: -1px;
 }
 
-@media screen  and (max-width:1182px){
-    .content-text{
-        font-size: medium;
-    }
+/*
+ Product Cards 
+*/
 
-    .slider{
-        height: 520px;
-    }
-
-    .content-pic img{
-        width: 500px;
-    }
-}
-@media screen  and (max-width:1191px){
-    .content-text h2{
-        font-size: 60px;
-    } 
-
-    .content-text p{
-        font-size: 15px;
-    }
+.heading{
+    text-align: center;
+    color: hsl(0, 0%, 47%);
+    margin-bottom: 5%;
 }
 
-@media screen  and (max-width:1080px){
-
-    .slider{
-        height: 494px;
-    }
-    .content-text h2{
-        font-size: 55px;
-    }
-    .content-pic img{
-        width: 480px;
-    } 
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 
-@media screen  and (max-width:976px){
-    .slider{
-        height: 470px;
-    }
-    .content-text h2{
-        font-size: 50px;
-    } 
-
-    .content-pic img{
-        width: 450px;
-    }
-}
-@media screen  and (max-width:896px){
-    .slider{
-        height: 455px;
-    }
-
-    .content-pic img{
-        width: 440px;
-    }
-}
-@media screen  and (max-width:876px){
-    .slider{
-        height: 430px;
-    }
-
-    .content-pic img{
-        width: 410px;
-    }
-}
-@media screen  and (max-width:847px){
-    .slider{
-        height: 420px;
-    }
-
-    .content-pic img{
-        width: 400px;
-    }
-
-    .content-text h2{
-        font-size: 38px;
-    }
+.mycard{
+    background-color: #e4f6fe;
+    width: 250px;
+    height: 353px;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    color: hsl(0, 0%, 47%);
 }
 
+.mycard:hover .action-container{
+    display: block;
+}
 
+.mycard .product-img{
+    width: 180px;
+    margin: auto;
+}
 
-@media screen  and (max-width:763px){
-    .slider{
-        height: 402px;
-    }
-    .content-text h2{
-        font-size: 35px;
-    } 
-    .content-pic img{
-        width: 380px;
-    }
+.mycard .product-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.action-container{
+    display: none;
+    position: absolute;
+    top: 30%;
+    right: 10px;
+}
+
+.product-action{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-action i{
+    padding: 5px 4px;
+    background-color: hsl(353, 100%, 78%);
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.rating{
+    margin-bottom: 5px;
+}
+
+.fa-star{
+    color: rgb(247, 247, 17);
+    font-size: 14px;
+    letter-spacing: 1.8px;
+}
+
+.product-info{
+    margin-left: 10px;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: hsl(0, 0%, 26%);
+    margin-top: 5px;
+}
+
+.price{
+    margin-top: 7px;
 }
 
 
-@media screen  and (max-width:713px){
-    .slider{
-        height: 392px;
-    }
-    .content-text h2{
-        font-size: 30px;
-    } 
-    .content-pic img{
-        width: 370px;
-    }
+/*
+ Ad Banner 
+*/
+
+.adsBanner{
+    width: 100%;
+    margin-bottom: 5%;
 }
 
-@media screen  and (max-width:687px){
-    .slider{
-        height: 375px;
-    }
-    .content-text h2{
-        font-size: 26px;
-    } 
-    .content-pic img{
-        width: 350px;
-    }
+.add1{
+    width: 70%;
+    margin: auto;
 }
 
-@media screen  and (max-width:620px){
-    .slider{
-        height: 355px;
-    }
-    .content-text h2{
-        font-size: 24px;
-    } 
-    .content-pic img{
-        width: 330px;
-    }
-}
-
-@media screen  and (max-width:590px){
-    .slider{
-        height:550px;
-    }
-
-    .slider-content{
-        flex-direction: column;
-    }
-
-    .content-text{
-        text-align: center;
-        margin-left: 0;
-    }
-    .content-text h2{
-        font-size: 24px;
-    } 
-
-    .content-text a{
-        margin-left: 0;
-    }
-
-    .content-text p{
-        margin-bottom: 12px;
-    }
-
-    .content-pic img{
-        width: 405px;
-        margin: auto;
-    }
-}
-
-@media screen  and (max-width:435px){
-    .slider{
-        height:450px;
-    }
-
-    .content-pic img{
-        width: 293px;
-        margin: auto;
-    }
-
-}
-@media screen  and (max-width:315px){
-    .slider{
-        height:350px;
-    }
-
-    .content-pic img{
-        width: 180px;
-        margin: auto;
-    }
-
+.add1 img{
+    width: 100%;
+    border-radius: 8px;
 }
 
 
 
 
+/*
+ Age Groups 
+*/
 
+.age{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 5%;
+}
 
+.age-groups{
+    width: 150px;
+}
 
+.age-groups img{
+    width: 100%;
+}
 
+.brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 5%;
+}
 
+.brand{
+    width: 150px;
+}
+
+.brand img{
+    width: 100%;
+}
 
 
 
