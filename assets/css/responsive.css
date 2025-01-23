@@ -16,7 +16,11 @@
         align-items: center;
         gap: 10px;
     }
-    .socials, .currency, .navbar, .user-action {
+
+    header .socials{
+        display: none;
+    }
+     .currency, .navbar, .user-action {
         display: none !important;
     }
 
@@ -30,6 +34,10 @@
     .header-main{
         justify-content: space-around;
         border: none;
+    }
+
+    .search-bar{
+        margin-left: 0;
     }
 
     .search-bar input{
@@ -93,52 +101,36 @@
 /*
  Product Cards 
 */
+
 @media screen and (max-width:540px){
+
+    .heading{
+        font-size: 15px;
+    }
     .mycard{
         width: 200px !important;
-        height: 250px !important;
+        height: 260px !important;
     }
 
     .mycard .product-img{
         width: 110px !important;
+        height: 180px !important;
     }
 }
+
+
 @media screen and (max-width:440px){
+    .heading{
+        font-size: 12px;
+    }
     .mycard{
-        width: 150px !important;
+        width: 135px !important;
         height: 200px !important;
     }
 
     .mycard .product-img{
-        width: 60px !important;
-    }
-
-    .product-info{
-        font-size: medium;
-    }
-
-    .action-container{
-        font-size: smaller;
-    }
-
-    .action-container i{
-        padding: 2px 2px;
-    }
-    .fa-star{
-        color: rgb(247, 247, 17);
-        font-size: smaller;
-        letter-spacing: 1.8px;
-    }
-}
-
-@media screen and (max-width:440px){
-    .mycard{
-        width: 130px !important;
-        height: 165px !important;
-    }
-
-    .mycard .product-img{
-        width: 50px !important;
+        width: 70px !important;
+        height: 125px !important;
     }
 
     .product-info{
@@ -147,8 +139,9 @@
 
     .action-container{
         font-size: smaller;
+        top: 10px;
+        right: 6px
     }
-
     .action-container i{
         padding: 2px 2px;
         font-size: small;
@@ -162,9 +155,64 @@
         font-size: 10px;
     }
 
-    .action-container{
-        top: 10px;
-        right: 6px;
+    .nextPage a{
+        font-size: smaller;
+    }
+}
+
+
+@media screen and (max-width:765px) {
+    
+    .userCard{
+        width: 280px !important;
+    }
+}
+
+@media screen and (max-width:630px) {
+    
+    .userCard{
+        width: 230px !important;
+    }
+}
+@media screen and (max-width:520px) {
+    
+    .userCard{
+        width: 200px !important;
+    }
+}
+
+@media screen and (max-width:460px) {
+    
+    .userCard{
+        width: 175px !important;
+    }
+
+    .userCard .content{
+        font-size: small;
+    }
+
+    .userCard .content img{
+        width: 70px;
+    }
+}
+@media screen and (max-width:410px) {
+    
+    .userCard{
+        width: 155px !important;
+    }
+
+    .userCard .content{
+        font-size: smaller;
+    }
+}
+@media screen and (max-width:370px) {
+    
+    .userCard{
+        width: 130px !important;
+    }
+
+    .userCard .content{
+        font-size: 10px;
     }
 }
 

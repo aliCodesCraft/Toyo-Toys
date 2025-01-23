@@ -9,6 +9,8 @@
 
 h1, h2, h3, h4, h5, h6{
     font-family: "Rubik", serif;
+    font-weight: 400;
+
 }
 
 body{
@@ -50,7 +52,7 @@ header .header-top{
 .header-top .discount{
     cursor: pointer;
     font-size: 12px;
-    margin-right: 55px;
+    margin-right: 80px;
 }
 .header-top .currency{
     margin-right: 30px;
@@ -93,6 +95,7 @@ header .header-top{
     padding: 7px;
     border-radius: 4px;
     color: hsl(0, 0%, 47%);
+    margin-left: 55px;
 }
 
 .search-bar input{
@@ -147,7 +150,7 @@ header .header-top{
     right: 0;
     margin-inline: auto;
     display: none;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .bottom-nav ol{
@@ -224,93 +227,6 @@ header .header-top{
     background: rgb(255, 255, 255);
     color: hsl(353, 100%, 78%)
 }
-
-
-/* @media screen and (max-width: 900px) {
-    
-    .bottom-nav{
-        display: block;
-    }
-
-    .logo{
-        margin-left: 20px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    .socials, .currency, .navbar, .user-action {
-        display: none !important;
-    }
-
-    .header-top{
-        display: block;
-    }
-
-    .header-top .discount{
-       margin: auto;
-    }
-    .header-main{
-        justify-content: space-around;
-        border: none;
-    }
-
-    .search-bar input{
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 620px){
-    .header-main{
-        flex-direction: column;
-        justify-content: center;
-        height: auto;
-    }
-
-    .search-bar{
-        margin-bottom: 20px;
-    }
-
-    .header-main .logo{
-        margin-left: 0;
-        margin-bottom: 20px;
-    }
-
-    .header-main .user-action{
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 350px){
-
-    .search-bar input{
-        width: 200px;
-    }
-
-    .discount p{
-        font-size: 10px;
-    }
-
-}
-
-@media screen and (max-width: 260px){
-
-    .search-bar input{
-        width: 170px;
-        font-size: small;
-    }
-
-    .discount p{
-        font-size: 8px;
-    }
-
-    .bottom-nav ol{
-        /* font-size: small; */
-        /* justify-content: center;
-        gap: 12px;
-    }
-
-}  */
-
 
 .cart{
     margin-right: 30px;
@@ -403,6 +319,11 @@ header .header-top{
 }
 
 
+.banner{
+    margin-bottom: 4%;
+}
+
+
 /*
  Product Cards 
 */
@@ -411,6 +332,7 @@ header .header-top{
     text-align: center;
     color: hsl(0, 0%, 47%);
     margin-bottom: 5%;
+    font-size: 20px;
 }
 
 .cards{
@@ -423,7 +345,7 @@ header .header-top{
 
 .mycard{
     background-color: #e4f6fe;
-    width: 250px;
+    width: 252px;
     height: 353px;
     border-radius: 4px;
     padding: 5px;
@@ -438,13 +360,15 @@ header .header-top{
 }
 
 .mycard .product-img{
-    width: 180px;
+    width: 190px;
     margin: auto;
+    height: 275px;
 }
 
 .mycard .product-img img{
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
 }
 
 .action-container{
@@ -494,27 +418,18 @@ header .header-top{
     margin-top: 7px;
 }
 
-
-/*
- Ad Banner 
-*/
-
-.adsBanner{
-    width: 100%;
+.nextPage{
+    text-align: center;
     margin-bottom: 5%;
 }
 
-.add1{
-    width: 70%;
-    margin: auto;
+.nextPage a{
+    background-color: hsl(353, 100%, 78%);
+    color: white;
+    padding: 10px 14px;
+    font-size: larger;
+    border-radius: 9px;
 }
-
-.add1 img{
-    width: 100%;
-    border-radius: 8px;
-}
-
-
 
 
 /*
@@ -547,7 +462,7 @@ header .header-top{
 }
 
 .brand{
-    width: 150px;
+    width: 180px;
 }
 
 .brand img{
@@ -555,18 +470,72 @@ header .header-top{
 }
 
 
-
-
-.featured{
+.testinomials{
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 10px;
+    justify-content: center;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
-.featured-item {
+.userCard{
+    width: 350px;
+    text-align: center;
+    background-color: #e4f6fe;
+    color: hsl(0, 0%, 26%);
+    font-size: medium;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.userCard .content h1, p, img, h3{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.userCard h1, h3{
+    color: hsl(353, 100%, 78%);
+    font-weight: bolder;
+}
+
+.userCard .content img{
+
+    margin: auto;
+    width: 100px;
+    border: 10px solid white;
+    border-radius: 100%;
+    object-fit: contain;
+}
+
+/*
+ Ad Banner 
+*/
+.adsBanner{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.add1{
+    width: 80%;
+    margin: auto;
+}
+
+.add1 img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/*
+ Services
+*/
+.Services{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: -3%;
+}
+
+.service-item {
     width: 250px;
-    border: 4px solid hsl(0, 0%, 93%);
     padding: 40px;
     position: relative;
     text-align: center;
@@ -575,7 +544,90 @@ header .header-top{
 
 }
 
-.featured-item:hover{
-    border: 4px solid hsl(353, 100%, 78%);
+footer{
+    background-color: #001219;
+    color: white;
+    padding: 30px;
+    border-radius: 32px 32px 0 0;
 }
 
+footer a{
+    color:white;
+}
+
+footer i{
+    color: hsl(353, 100%, 78%);
+}
+
+footer h3{
+    color: white;
+}
+
+footer .footer-container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+footer .footer-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer .footer-container ul{
+    padding: 0;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+footer .footer-container ul li{
+    margin: 10px 0;
+}
+
+.footer-container .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-bottom .socials ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-bottom i{
+    color: white;
+}
+
+.footer-container .copyright{
+    color: hsl(353, 100%, 78%);
+    font-weight: 500;
+}
+
+@media screen and (max-width:850px) {
+    footer .footer-container .footer-top{
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    footer .footer-container ul{
+        margin-bottom: 14px;
+    } 
+    
+    footer .footer-container .logo{
+        margin: auto;
+    }
+
+}
+@media screen and (max-width:600px) {
+    footer .footer-container .footer-top{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+    }
+
+
+}
