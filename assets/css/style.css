@@ -1,5 +1,7 @@
+/*--------------------Google Font--------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+/*--------------------Universal--------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -7,17 +9,23 @@
     list-style-type: none;
 }
 
+/*--------------------H Group--------------------*/
 h1, h2, h3, h4, h5, h6{
     font-family: "Rubik", serif;
     font-weight: 400;
-
 }
 
+/*--------------------Body--------------------*/
 body{
     font-family: "Fredoka", serif;
     background-color: #ffffff;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+/*--------------------Header Top--------------------*/
 header .header-top{
     display: flex;
     justify-content: space-between;
@@ -26,8 +34,6 @@ header .header-top{
     color: hsl(0, 0%, 47%);
     border-bottom: 1px solid hsl(0, 0%, 93%);
 }
-
-
 .header-top .socials{
     margin-left: 30px;
 }
@@ -68,7 +74,7 @@ header .header-top{
     outline: none;
 }
 
-
+/*--------------------Header Main--------------------*/
 .header-main{
     display: flex;
     justify-content: space-around;
@@ -122,12 +128,7 @@ header .header-top{
     background-color: hsl(353, 100%, 78%);
 }
 
-sup{
-    font-size: small;
-    background-color: red;
-    color: white;
-}
-
+/*--------------------Navbar--------------------*/
 .navbar nav ol {
     display: flex;
     gap: 60px;
@@ -147,7 +148,7 @@ sup{
     color: hsl(353, 100%, 78%);
 }
 
-
+/*--------------------Bottom Navigation--------------------*/
 .bottom-nav {
     max-width: 100%;
     position: fixed;
@@ -185,6 +186,7 @@ sup{
 }
 
 
+/*--------------------Mobile Nav--------------------*/
 .mobile-container{
     display: none;
 }
@@ -234,6 +236,20 @@ sup{
     color: hsl(353, 100%, 78%)
 }
 
+.count {
+    position: absolute;
+    /* top: -2px; */
+    /* right: -3px; */
+    background: red;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 2px 4px;
+    border-radius: 20px;
+}
+
+/*--------------------Cart Area--------------------*/
 .cart{
     margin-right: 30px;
     font-size: larger;
@@ -262,7 +278,6 @@ sup{
     padding: 10px;
     height: 100%;
     overflow: scroll;
-    /* background-color: rgb(253, 246, 246); */
     background-color: #e4f6fe;
     border-radius: 6px;
 }
@@ -272,10 +287,8 @@ sup{
     height: 100%;
     display: flex;
     justify-content: space-around;
-    /* margin-top: 15px; */
     align-items: center;
     margin-top: 15px;
-    /* gap: 10px; */
 }
 
 .cart-pic{
@@ -331,44 +344,16 @@ a.order{
     font-weight: 500;
 }
 
-
 .del i{
     color: hsl(353, 100%, 78%);
+    cursor: pointer;
 }
 
-@media screen and (max-width:460px) {
-    .cart-container{
-        width: 275px;
-    }
-
-
-    .cart-pic{
-        width: 60px;
-        height: 60px;
-    }
-
-    .cart-info{
-        font-size: smaller;
-    }
-
-    a.order{
-        width: 283px;
-        right: 11px;
-    }
-    .cart-total p{
-        font-size: small;
-    }
-}
-
+/*--------------------Banner--------------------*/
 .banner{
     margin-bottom: 4%;
 }
-
-
-/*
- Product Cards 
-*/
-
+/*--------------------Product Cards--------------------*/
 .heading{
     text-align: center;
     color: hsl(0, 0%, 47%);
@@ -386,14 +371,16 @@ a.order{
 
 .mycard{
     background-color: #e4f6fe;
-    width: 252px;
-    height: 353px;
+    /* background-color: white; */
+    width: 242px;
+    height: 343px;
     border-radius: 4px;
     padding: 5px;
     cursor: pointer;
     border-radius: 8px;
     position: relative;
     color: hsl(0, 0%, 47%);
+    /* box-shadow: 0px 0px 4px 0px hsl(353, 100%, 78%); */
 }
 
 .mycard:hover .action-container{
@@ -401,9 +388,9 @@ a.order{
 }
 
 .mycard .product-img{
-    width: 190px;
+    width: 180px;
     margin: auto;
-    height: 275px;
+    height: 265px;
 }
 
 .mycard .product-img img{
@@ -427,7 +414,7 @@ a.order{
 
 .product-action i{
     padding: 5px 4px;
-    background-color: hsl(353, 100%, 78%);
+    background-color:hsl(353, 100%, 78%);
     color: white;
     border-radius: 4px;
     text-align: center;
@@ -451,7 +438,7 @@ a.order{
     font-weight: 500;
     font-size: 16px;
     line-height: 1;
-    color: hsl(0, 0%, 26%);
+    color: hsl(0, 0%, 47%);
     margin-top: 5px;
 }
 
@@ -472,6 +459,7 @@ a.order{
     border-radius: 9px;
 }
 
+/*--------------------Pagination--------------------*/
 .page-btn{
     margin-bottom: 5%;
    text-align: center;
@@ -538,10 +526,8 @@ a.order{
     color: white !important;
 }
 
-/*
- Age Groups 
-*/
 
+/*--------------------Age Group--------------------*/
 .age{
     display: flex;
     justify-content: center;
@@ -558,6 +544,7 @@ a.order{
     width: 100%;
 }
 
+/*--------------------Brands--------------------*/
 .brands{
     display: flex;
     justify-content: center;
@@ -568,23 +555,40 @@ a.order{
 }
 
 .brand{
-    width: 170px;
+    width: 160px;
 }
 
 .brand img{
     width: 100%;
 }
 
+/*--------------------Testimonials--------------------*/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
 
-.testinomials{
+#wrapper{
+    position: static;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+#slider-btn{
+    color: darksalmon;
+    position:static;
+    margin-top: 10px;
 }
 
 .userCard{
-    width: 350px;
+    /* width: 275px; */
+    width: 80%;
     text-align: center;
     background-color: #e4f6fe;
     color: hsl(0, 0%, 26%);
@@ -612,9 +616,7 @@ a.order{
     object-fit: contain;
 }
 
-/*
- Ad Banner 
-*/
+/*--------------------Ads Banner--------------------*/
 .adsBanner{
     width: 100%;
     margin-bottom: 2%;
@@ -630,9 +632,7 @@ a.order{
     border-radius: 8px;
 }
 
-/*
- Services
-*/
+/*--------------------Services--------------------*/
 .Services{
     display: flex;
     justify-content: space-evenly;
@@ -651,6 +651,7 @@ a.order{
 }
 
 
+/*--------------------Location--------------------*/
 .location-container{
     display: flex;
     justify-content: center;
@@ -660,7 +661,8 @@ a.order{
     display: flex;
     margin-bottom: 5%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
 }
 
 .location-text{
@@ -671,40 +673,134 @@ a.order{
 iframe{
     border-radius: 30px;
     border:4px solid hsl(353, 100%, 78%);
-    width: 400px;
+    width: 300px;
+    height: 300px;
+}
+
+/*--------------------Detail Page--------------------*/
+.details-container{
+    display: flex;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    margin-left: 70px;
+    gap: 30px;
+    /* align-items: center; */
+}
+
+.pics{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.big-img{
+    width: 330px;
     height: 400px;
+    background-color: hsl(353, 100%, 78%);
+}
+ 
+.small-img{
+    width: 330px;
+    height: 380px;
+    display: flex;
+    gap: 5px;
+    /* flex-direction: column; */
+    cursor: pointer;
 }
 
-@media screen and (max-width:1280px) {
-    .location{
-        flex-direction: column;
-    }
-
-    .location-text{
-        margin-bottom: 3%;
-    }
-}
-@media screen and (max-width:440px) {
-    iframe{
-        width: 250px;
-        height: 250px;
-    }
-    .location-text{
-        width: 250px;
-        font-size: medium;
-    }
+.small-box{
+    width: 100px;
+    height: 90px;
+    background-color: #e4f6fe;
 }
 
+.info{
+    width: 500px;
+    margin-top: 8%;
+}
 
-footer{
-    background-color: #001219;
+#detail-p{
+    margin-top: -20%;
+}
+
+.ordernow, .download{
+    background-color: hsl(353, 100%, 78%);
+    border: none;
+    padding: 5px 10px;
     color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: large;
+}
+/*--------------------Contact--------------------*/
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+
+}
+
+.form{
+    width: 650px;
+    margin-top: 100px;
+    background-color: #001219;
+}
+
+.form form{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+label{
+    display: none;
+}
+
+.input-box{
+    width: 230px;
+    border: 1px solid hsl(0, 0%, 47%);
+}
+
+.input-box input{
+    padding: 5px;
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+}
+
+textarea{
+    width: 484px;
+    height: 200px;
+    outline: none;
+}
+
+.contact-pic{
+    width: 350px;
+    height: 400px;
+    background-color: green;
+}
+
+.contact-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*--------------------Footer--------------------*/
+footer{
+    /* background-color: #001219; */
+    background-color: #e4f6fe;
+    color: hsl(0, 0%, 47%);
     padding: 30px;
     border-radius: 32px 32px 0 0;
 }
 
 footer a{
-    color:white;
+    color:hsl(0, 0%, 47%);
 }
 
 footer i{
@@ -712,7 +808,7 @@ footer i{
 }
 
 footer h3{
-    color: white;
+    color: hsl(0, 0%, 26%);
 }
 
 footer .footer-container{
@@ -750,36 +846,10 @@ footer .footer-container ul li{
 }
 
 .footer-bottom i{
-    color: white;
+    color: hsl(0, 0%, 47%);
 }
 
 .footer-container .copyright{
     color: hsl(353, 100%, 78%);
     font-weight: 500;
-}
-
-@media screen and (max-width:850px) {
-    footer .footer-container .footer-top{
-        grid-template-columns: 1fr 1fr;
-        text-align: center;
-    }
-    footer .footer-container ul{
-        margin-bottom: 14px;
-    } 
-    
-    footer .footer-container .logo{
-        margin: auto;
-    }
-
-}
-@media screen and (max-width:600px) {
-    footer .footer-container .footer-top{
-        grid-template-columns: 1fr;
-    }
-
-    .footer-bottom{
-        flex-direction: column;
-    }
-
-
 }

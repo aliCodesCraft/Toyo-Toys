@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
 
 /*
- Header and Navbar
+ Header and Navbar---------------------------
 */
 @media screen and (max-width: 900px) {
     
@@ -99,7 +97,7 @@
 
 
 /*
- Product Cards 
+ Product Cards -----------------------------
 */
 
 @media screen and (max-width:540px){
@@ -161,6 +159,9 @@
 }
 
 
+/*
+ Testimonials -------------------------------
+*/
 @media screen and (max-width:765px) {
     
     .userCard{
@@ -218,9 +219,36 @@
 
 
 /*
- Brand and Age 
+ Cart Area------------------------------------
 */
 
+@media screen and (max-width:460px) {
+    .cart-container{
+        width: 275px;
+    }
+
+
+    .cart-pic{
+        width: 60px;
+        height: 60px;
+    }
+
+    .cart-info{
+        font-size: smaller;
+    }
+
+    a.order{
+        width: 283px;
+        right: 11px;
+    }
+    .cart-total p{
+        font-size: small;
+    }
+}
+
+/*
+ Brand & Age------------------------------------
+*/
 @media screen and (max-width:935px){
 
     .brand, .age-groups{
@@ -242,4 +270,76 @@
         width: 55px !important;
     }
     
+}
+
+/*
+ Location------------------------------------
+*/
+
+@media screen and (max-width:1280px) {
+    .location{
+        gap: 90px;
+    }
+}
+
+@media screen and (max-width:956px) {
+    iframe{
+        width: 280px;
+        height: 280px;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .location{
+        flex-direction: column;
+    }
+
+    iframe{
+        margin-top: -30%;
+    }
+
+    .location-text{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    iframe{
+        width: 250px;
+        height: 250px;
+    }
+
+    .location-text{
+        font-size: 15px;
+        width: 300px;
+    }
+}
+
+/*
+ Footer------------------------------------
+*/
+
+@media screen and (max-width:850px) {
+    footer .footer-container .footer-top{
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    footer .footer-container ul{
+        margin-bottom: 14px;
+    } 
+    
+    footer .footer-container .logo{
+        margin: auto;
+    }
+
+}
+@media screen and (max-width:600px) {
+    footer .footer-container .footer-top{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+    }
 }

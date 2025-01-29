@@ -19,6 +19,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     let totalPrice = 0;
+    let itemCount = 0;
     
     $(".addToCart").click(function () {
         let myCard = $(this).closest(".mycard");
@@ -48,18 +49,31 @@ $(document).ready(function () {
     // Total Price
     totalPrice += itemPrice;
     $("#total").text(totalPrice.toFixed(2));
+
+    itemCount++;
+    $(".count").text(itemCount);
+
     });
 
     // Removing Items
     $(".cart-box").on("click", ".del", function () {
-        let itemPrice = parseFloat($(this).closest(".cart-content").find(".cart-total p").text());
+        let itemPrice = parseFloat($(this).closest(".cart-content").find(".cart-total p").text().replace("PKR", "").trim());
+
         
         totalPrice -= itemPrice; 
         $("#total").text(totalPrice.toFixed(2));
     
         $(this).closest(".cart-content").remove();
+
+        itemCount--;
+        $(".count").text(itemCount);
     });
     
 });
+
+
+
+
+
 
 

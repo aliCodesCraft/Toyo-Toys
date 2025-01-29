@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Toyo Toys</title>
     <!-- CSS Link -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Media Queries Link -->
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -62,9 +62,9 @@
             <!-- User Action -->
             <div class="user-action">
                 <ul>
+                    <li><i class="fa-solid fa-bag-shopping myCart"></i></li><sup class="count">0</sup>
                     <li><i class="fa-solid fa-user"></i></li>
                     <li><i class="fa-solid fa-heart"></i></li>
-                    <li><i class="fa-solid fa-bag-shopping myCart"></i></li>
                 </ul>
             </div>
         </div>
@@ -91,7 +91,7 @@
                 <li class="bars"><i class="fa-solid fa-bars"></i></li>
                 <li><i class="fa-solid fa-user"></i></li>
                 <li><i class="fa-solid fa-heart"></i></li>
-                <li><i class="fa-solid fa-bag-shopping myCart"></i></li>
+                <li><i class="fa-solid fa-bag-shopping myCart"></i><sup class="count">0</sup></li>
             </ol>
         </div>
     </div>
@@ -134,8 +134,10 @@
         </div>
         <div class="cart-actions">
             <div class="cart-total">
-                <h3>Total Amount:&nbsp;<span id="total"><p>0</p></span></h3>
-        </div>
+                <h3>Total Amount:&nbsp;<span id="total">
+                        <p>0</p>
+                    </span></h3>
+            </div>
         </div>
         <div class="cart-box">
         </div>
@@ -154,14 +156,14 @@
 
     <!-- ==========New Arrivals Start========== -->
 
-    <div class="heading">
+    <div class="heading" id="new">
         <h2>New Arrivals</h2>
     </div>
     <div class="cards">
         <!-- Card-1 -->
         <div class="mycard">
             <div class="product-img">
-                <img src="assets/images/products/ben2.png" alt="">
+                <img src="assets/images/products/toys/ben2.png" alt="">
             </div>
             <div class="action-container">
                 <div class="product-action">
@@ -272,7 +274,7 @@
     <!-- ==========New Products End========== -->
 
     <!-- ==========Age Group Start========== -->
-    <div class="heading">
+    <div class="heading" id="age">
         <h2>Shop By Age</h2>
     </div>
 
@@ -321,7 +323,7 @@
         <!-- Card-1 -->
         <div class="mycard">
             <div class="product-img">
-                <img src="assets/images/products/ben.png" alt="">
+                <img src="assets/images/products/toys/ben.png" alt="">
             </div>
             <div class="action-container">
                 <div class="product-action">
@@ -374,6 +376,58 @@
             </div>
         </div>
         <!-- Card-3 -->
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/Toys/beyblade (3).png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Flame Libra</a>
+                <div class="price">
+                    <p>PKR 2450.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="mycard">
+            <div class="product-img">
+                <img src="assets/images/products/Toys/marvel (1).png" alt="">
+            </div>
+            <div class="action-container">
+                <div class="product-action">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping addToCart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <a href="" class="title">Deadpool</a>
+                <div class="price">
+                    <p>PKR 1450.00</p>
+                </div>
+            </div>
+        </div>
         <div class="mycard">
             <div class="product-img">
                 <img src="assets/images/products/Toys/dbz (2).png" alt="">
@@ -512,7 +566,7 @@
         <!-- Card-8 -->
         <div class="mycard">
             <div class="product-img">
-                <img src="assets/images/products/ben2.png" alt="">
+                <img src="assets/images/products/toys/ben2.png" alt="">
             </div>
             <div class="action-container">
                 <div class="product-action">
@@ -544,7 +598,7 @@
     <!-- ==========Catalog End========== -->
 
     <!-- ==========Brands Start========== -->
-    <div class="heading">
+    <div class="heading" id="brands">
         <h2>Shop By Brands</h2>
     </div>
     <div class="brands">
@@ -585,87 +639,107 @@
     <div class="heading">
         <h2>Our Happy Clients</h2>
     </div>
-    <div class="testinomials">
-        <div class="userCard">
-            <div class="content">
-                <h1><i class="ri-double-quotes-r"></i></h1>
-                <img src="assets/images/Brands/ben10.png" alt="">
-                <p>The service provided is top-notch, and the product exceeded my expectations. I will definitely
-                    recommend it.</p>
-                <div class="rating">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="wrapper">
+            <div class="swiper-slide">
+                <div class="userCard">
+                    <div class="content">
+                        <h1><i class="ri-double-quotes-r"></i></h1>
+                        <img src="assets/images/users/user (2).png" alt="">
+                        <p>The service provided is top-notch, and the product exceeded my expectations. I will
+                            definitely
+                            recommend it.</p>
+                        <div class="rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h3>Ahmed Ali</h3>
+                    </div>
                 </div>
-                <h3>Ahmed Ali</h3>
             </div>
-        </div>
-        <div class="userCard">
-            <div class="content">
-                <h1><i class="ri-double-quotes-r"></i></h1>
-                <img src="assets/images/Brands/ben10.png" alt="">
-                <p>Excellent quality and amazing support! The experience was seamless, and I am really satisfied with
-                    it.</p>
-                <div class="rating">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+            <div class="swiper-slide">
+                <div class="userCard">
+                    <div class="content">
+                        <h1><i class="ri-double-quotes-r"></i></h1>
+                        <img src="assets/images/users/user (1).png" alt="">
+                        <p>Excellent quality and amazing support! The experience was seamless, and I am really satisfied
+                            with
+                            it. Worth buying</p>
+                        <div class="rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h3>Fatima Khan</h3>
+                    </div>
                 </div>
-                <h3>Fatima Khan</h3>
             </div>
-        </div>
-        <div class="userCard">
-            <div class="content">
-                <h1><i class="ri-double-quotes-r"></i></h1>
-                <img src="assets/images/Brands/ben10.png" alt="">
-                <p>Truly impressed with the product's performance and the team's professionalism. It was worth every
-                    penny.</p>
-                <div class="rating">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+            <div class="swiper-slide">
+                <div class="userCard">
+                    <div class="content">
+                        <h1><i class="ri-double-quotes-r"></i></h1>
+                        <img src="assets/images/users/user (2).png" alt="">
+                        <p>Truly impressed with the product's performance and the team's professionalism. It was worth
+                            every
+                            penny.</p>
+                        <div class="rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h3>Hassan Syed</h3>
+                    </div>
                 </div>
-                <h3>Hassan Syed</h3>
             </div>
-        </div>
-        <div class="userCard">
-            <div class="content">
-                <h1><i class="ri-double-quotes-r"></i></h1>
-                <img src="assets/images/Brands/ben10.png" alt="">
-                <p>The quality and attention to detail in the product are remarkable. I am very happy with my purchase.
-                    Totally worth it</p>
-                <div class="rating">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+            <div class="swiper-slide">
+                <div class="userCard">
+                    <div class="content">
+                        <h1><i class="ri-double-quotes-r"></i></h1>
+                        <img src="assets/images/users/user (1).png" alt="">
+                        <p>The quality and attention to detail in the product are remarkable. I am very happy with my
+                            purchase.
+                            Totally worth it</p>
+                        <div class="rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h3>Ayesha Malik</h3>
+                    </div>
                 </div>
-                <h3>Ayesha Malik</h3>
             </div>
-        </div>
-        <div class="userCard">
-            <div class="content">
-                <h1><i class="ri-double-quotes-r"></i></h1>
-                <img src="assets/images/Brands/ben10.png" alt="">
-                <p>I am extremely satisfied with the service and product. It was an exceptional experience from start to
-                    end.</p>
-                <div class="rating">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+            <div class="swiper-slide">
+                <div class="userCard">
+                    <div class="content">
+                        <h1><i class="ri-double-quotes-r"></i></h1>
+                        <img src="assets/images/users/user (2).png" alt="">
+                        <p>I am extremely satisfied with the service and product. It was an exceptional experience from
+                            start to
+                            end.</p>
+                        <div class="rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h3>Muhammad Usman</h3>
+                    </div>
                 </div>
-                <h3>Muhammad Usman</h3>
             </div>
+
         </div>
+        <div class="swiper-pagination" id="slider-btn"></div>
     </div>
     <!-- ==========Testominals End========== -->
 
@@ -677,28 +751,28 @@
     </div>
     <!-- ==========Ads End========== -->
 
-<div class="location-container">
-    
-    <div class="location">
-        <div class="location-text">
-            
-    <div class="heading">
-        <h2>Our Location<i class="ri-map-pin-line" style="color: hsl(353, 100%, 78%);"></i></h2>
-    </div>
-            <p>Find us here and step into a world of fun, laughter, and endless toys! Visit our shop to explore
-                treasures that bring joy to every age.</p>
+    <div class="location-container">
+
+        <div class="location">
+            <div class="location-text">
+
+                <div class="heading">
+                    <h2>Our Location<i class="ri-map-pin-line" style="color: hsl(353, 100%, 78%);"></i></h2>
+                </div>
+                <p>Find us here and step into a world of fun, laughter, and endless toys! Visit our shop to explore
+                    treasures that bring joy to every age.</p>
+
+            </div>
+
+            <div class="location-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2283193.7208425913!2d42.08849937756835!3d32.82108495026965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3eb33ebd64c5569b%3A0x409c7eb716c13d7!2zMjQuOTI2ODkwNiwgNjcuMTA3NTM2NCwgS2FyYWNoaSwgUGFraXN0YW4!3m2!1d24.9268906!2d67.1075364!4m5!1s0x407636eaad0de9cf%3A0xf1683e45101aedda!2sToyo%20Toys!3m2!1d38.3526517!2d38.3211143!5e0!3m2!1sen!2s!4v1695456462572!5m2!1sen!2s"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
 
         </div>
-
-        <div class="location-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2283193.7208425913!2d42.08849937756835!3d32.82108495026965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3eb33ebd64c5569b%3A0x409c7eb716c13d7!2zMjQuOTI2ODkwNiwgNjcuMTA3NTM2NCwgS2FyYWNoaSwgUGFraXN0YW4!3m2!1d24.9268906!2d67.1075364!4m5!1s0x407636eaad0de9cf%3A0xf1683e45101aedda!2sToyo%20Toys!3m2!1d38.3526517!2d38.3211143!5e0!3m2!1sen!2s!4v1695456462572!5m2!1sen!2s"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-
     </div>
-</div>
 
 
     <div class="heading">
@@ -760,9 +834,9 @@
                     <h3>Categories<sup><i class="ri-archive-stack-line"></i></sup></h3>
 
                     <ul>
-                        <li><a href="">New Arrivals</a></li>
-                        <li><a href="">Age</a></li>
-                        <li><a href="">Brands</a></li>
+                        <li><a href="#new">New Arrivals</a></li>
+                        <li><a href="#age">Age</a></li>
+                        <li><a href="#brands">Brands</a></li>
                     </ul>
                 </div>
 
@@ -795,6 +869,21 @@
 
     <script src="assets/js/jquery-3.7.1.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 
 </body>
 
