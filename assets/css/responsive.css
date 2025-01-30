@@ -105,6 +105,11 @@
     .heading{
         font-size: 15px;
     }
+
+    .uline{
+        width: 150px;
+    }
+
     .mycard{
         width: 200px !important;
         height: 260px !important;
@@ -121,6 +126,11 @@
     .heading{
         font-size: 12px;
     }
+
+    .uline{
+        width: 130px;
+    }
+
     .mycard{
         width: 135px !important;
         height: 200px !important;
