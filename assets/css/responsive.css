@@ -172,7 +172,7 @@
 /*
  Testimonials -------------------------------
 */
-@media screen and (max-width:765px) {
+/* @media screen and (max-width:765px) {
     
     .userCard{
         width: 280px !important;
@@ -225,8 +225,7 @@
     .userCard .content{
         font-size: 10px;
     }
-}
-
+} */
 
 /*
  Cart Area------------------------------------
@@ -323,6 +322,134 @@
     .location-text{
         font-size: 15px;
         width: 300px;
+    }
+}
+
+/*
+ Contact Page------------------------------------
+*/
+
+
+@media screen and (max-width:945px) {
+    .contact-form{
+        flex-direction: column-reverse;
+        height: auto;
+        justify-content: center;
+    }
+
+    .contact-info ol{
+        flex-direction: column;
+    }
+
+    .box2{
+        margin-top: 5%;
+    }
+
+    .box1{
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .input-box{
+        width: 150px !important;
+    }
+    .box1{
+        width: 400px;
+    }
+    .box2{
+        width: 200px;
+    }
+
+    .msg-box{
+        width: 345px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .box1 form{
+        display: static;
+    }
+
+    .input-box{
+        width: 200px !important;
+        margin-bottom: 2%;
+    }
+
+    .box1{
+        width: 220px;
+    }
+    .msg-box{
+        width: 215px;
+        margin-top: 0;
+    }
+
+    .contact-form{
+        display: static;
+        width: 250px;
+        margin: auto;
+    }
+}
+
+
+
+/*
+ Detail Page------------------------------------
+*/
+
+
+@media screen and (max-width:840px) {
+    .details-container{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+
+    .info{
+        width: 500px;
+        margin-bottom: 4%;
+    }
+
+    .pics{
+        gap: 40px;
+    }
+
+    .big-img{
+        width: 340px;
+        height: 400px;
+    }
+
+
+}
+
+@media screen and (max-width:520px) {
+
+    .pics{
+        flex-direction: column-reverse;
+    }
+
+
+    .small-img{
+        flex-direction: row;
+    }
+
+    .big-img{
+        width: 250px;
+        height: 290px;
+    }
+
+    .small-box{
+        width: 60px;
+        height: 60px;
+    }
+
+    .info{
+        font-size: small;
+        width: 300px;
+    }
+
+    .info button{
+        font-size: small;
     }
 }
 
