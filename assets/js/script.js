@@ -1,3 +1,11 @@
+let mainImage = document.getElementById("mainImage")
+
+function changeImage(smallImage) {
+    mainImage.src = smallImage.src;
+}
+
+
+
 $(document).ready(function () {
     $(".bars").click(function () {
         $(".mobile-container").show(300);
@@ -101,13 +109,3 @@ var swiper = new Swiper(".mySwiper", {
     }
 
 });
-
-
-let mainImage = document.getElementById("mainImage")
-
-function changeImage(smallImage) {
-    mainImage.src = smallImage.src;
-}
-
-
-
