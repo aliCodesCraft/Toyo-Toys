@@ -402,6 +402,10 @@ a.order{
     /* box-shadow: 0px 0px 4px 0px hsl(353, 100%, 78%); */
 }
 
+#bpic{
+    height: 250px;
+}
+
 .mycard:hover .action-container{
     display: block;
 }
@@ -793,6 +797,10 @@ a.order{
     padding: 35px;
 }
 
+.contact-info p{
+    margin-top: 2%;
+}
+
 .contact-info i{
     color: hsl(353, 100%, 78%);
     padding-bottom: 5px;
@@ -829,9 +837,9 @@ a.order{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 660px;
+    height: 530px;
     align-items: center;
-    margin-top: -10%;
+    margin-top: -5%;
 }
 
 .box1{
@@ -915,6 +923,77 @@ label{
     margin-left: 9px;
     margin-top: 5px;
 }
+
+
+/*--------------------About--------------------*/
+
+.about-container{
+    text-align: center;
+    color: hsl(0, 0%, 26%);
+}
+
+
+.team{
+    padding: 30px;
+    margin-top: -4%;
+}
+
+.team-info{
+    margin-top: -10px;
+}
+
+.teamCard{
+    width: 80%;
+    background-color: #e4f6fe;
+    padding: 50px;
+    border-radius: 12px;
+    
+}
+
+.teamCard img{
+width: 100px;
+border-radius: 50%;
+border: 4px solid hsl(353, 100%, 78%);
+
+}
+
+.action{
+    margin-top: 6%;
+}
+
+a.chat{
+    color: hsl(0, 0%, 26%);
+    border: 1px solid hsl(0, 0%, 47%);
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: 5%;
+}
+
+a.chat:hover{
+    background-color: hsl(0, 0%, 93%);
+}
+
+.icons{
+    display: flex;
+    gap: 10px;
+    color: white;
+    margin-top: 8%;
+    justify-content: center;
+}
+
+.icons i{
+    background-color: hsl(353, 100%, 78%);
+    padding: 5px 5px;
+    border-radius: 4px;
+}
+
+
+.quote{
+    color: hsl(353, 100%, 78%);
+    margin-bottom: 3%;
+}
+
+
 /*--------------------Footer--------------------*/
 footer{
     /* background-color: #001219; */

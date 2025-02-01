@@ -6,6 +6,7 @@ function changeImage(smallImage) {
 
 
 
+
 $(document).ready(function () {
     $(".bars").click(function () {
         $(".mobile-container").show(300);

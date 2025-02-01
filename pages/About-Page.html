@@ -1,156 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <!-- Media Queries Link -->
-    <link rel="stylesheet" href="../assets/css/responsive.css">
-    <!-- Font Awesome Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<!-- CSS Link -->
+<link rel="stylesheet" href="../assets/css/style.css">
+<!-- Media Queries Link -->
+<link rel="stylesheet" href="../assets/css/responsive.css">
+<!-- Font Awesome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+
 <body>
     <!-- ==========Header Start========== -->
- <header>
+    <header>
 
-    <!-- Header Top -->
-    <div class="header-top">
-        <div class="socials">
-            <ul>
-                <li><i class="fa-brands fa-facebook"></i></li>
-                <li><i class="fa-brands fa-twitter"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
-            </ul>
-        </div>
-        <div class="discount">
-            <P><b>FREE SHIPPING</b> THIS WEEK ORDER OVER - 3000 PKR</P>
-        </div>
-        <div class="currency">
-            <select>
-                <option value="">PKR</option>
-                <option value="">USD</option>
-            </select>
-        </div>
-    </div>
-
-    <!-- Header Main -->
-    <div class="header-main">
-        <!-- Logo -->
-        <div class="logo">
-            <!-- <h1>Toyo Shop</h1> -->
-            <img src="../assets/images/logos/logo1.png" alt="">
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="socials">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+            </div>
+            <div class="discount">
+                <P><b>FREE SHIPPING</b> THIS WEEK ORDER OVER - 3000 PKR</P>
+            </div>
+            <div class="currency">
+                <select>
+                    <option value="">PKR</option>
+                    <option value="">USD</option>
+                </select>
+            </div>
         </div>
 
+        <!-- Header Main -->
+        <div class="header-main">
+            <!-- Logo -->
+            <div class="logo">
+                <!-- <h1>Toyo Shop</h1> -->
+                <img src="../assets/images/logos/logo1.png" alt="">
+            </div>
 
-        <div class="search-bar">
-            <input type="search" name="" id="" placeholder="Enter Your Search Query"><i
-                class="fa-solid fa-magnifying-glass"></i>
+
+            <div class="search-bar">
+                <input type="search" name="" id="" placeholder="Enter Your Search Query"><i
+                    class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!-- User Action -->
+            <div class="user-action">
+                <ul>
+                    <li><i class="fa-solid fa-user"></i></li>
+                    <li><i class="fa-solid fa-heart"></i></li>
+                    <li><i class="fa-solid fa-bag-shopping myCart"></i></li>
+                </ul>
+            </div>
         </div>
 
-        <!-- User Action -->
-        <div class="user-action">
-            <ul>
+        <!-- Header - Nabar -->
+        <div class="navbar">
+            <nav>
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/Product-Pages/Product-Page-1.html">Products</a></li>
+                    <li><a href="../pages/Gallery-Page.html">Gallery</a></li>
+                    <li><a href="About-Page.html">About Us</a></li>
+                    <li><a href="../pages/Contact-Page.html">Contact Us</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <!-- ==========Header End========== -->
+
+    <!-- ==========Bottom Nav Start========== -->
+    <div class="bottom-container">
+        <div class="bottom-nav">
+            <ol>
+                <li class="bars"><i class="fa-solid fa-bars"></i></li>
                 <li><i class="fa-solid fa-user"></i></li>
                 <li><i class="fa-solid fa-heart"></i></li>
                 <li><i class="fa-solid fa-bag-shopping myCart"></i></li>
-            </ul>
+            </ol>
         </div>
     </div>
 
-    <!-- Header - Nabar -->
-    <div class="navbar">
-        <nav>
-            <ol>
-                <li><a href="../index.html">Home</a></li>
+    <!-- ==========Mobile Nav Start========== -->
+    <div class="mobile-container">
+        <div class="mobile-nav">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="assets/images/logos/logo1.png" alt="">
+            </div>
+            <div class="tabs">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="../pages/Product-Pages/Product-Page-1.html">Products</a></li>
                     <li><a href="../pages/Gallery-Page.html">Gallery</a></li>
                     <li><a href="About-Page.html">About Us</a></li>
                     <li><a href="../pages/Contact-Page.html">Contact Us</a></li>
-            </ol>
-        </nav>
+                </ol>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+            </div>
+            <div class="cross-nav">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
     </div>
-</header>
-<!-- ==========Header End========== -->
+    <!-- ==========Mobile Nav END========== -->
 
-<!-- ==========Bottom Nav Start========== -->
-<div class="bottom-container">
-    <div class="bottom-nav">
-        <ol>
-            <li class="bars"><i class="fa-solid fa-bars"></i></li>
-            <li><i class="fa-solid fa-user"></i></li>
-            <li><i class="fa-solid fa-heart"></i></li>
-            <li><i class="fa-solid fa-bag-shopping myCart"></i></li>
-        </ol>
-    </div>
-</div>
-
-<!-- ==========Mobile Nav Start========== -->
-<div class="mobile-container">
-    <div class="mobile-nav">
-        <!-- Logo -->
-        <div class="logo">
-            <img src="assets/images/logos/logo1.png" alt="">
-        </div>
-        <div class="tabs">
-            <ol>
-                <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/Product-Pages/Product-Page-1.html">Products</a></li>
-                    <li><a href="../pages/Gallery-Page.html">Gallery</a></li>
-                    <li><a href="About-Page.html">About Us</a></li>
-                    <li><a href="../pages/Contact-Page.html">Contact Us</a></li>
-            </ol>
-        </div>
-        <div class="socials">
-            <ul>
-                <li><i class="fa-brands fa-facebook"></i></li>
-                <li><i class="fa-brands fa-twitter"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
-            </ul>
-        </div>
-        <div class="cross-nav">
+    <!-- ==========Cart Container Start========== -->
+    <div class="cart-container">
+        <div class="closeCart">
             <i class="fa-solid fa-xmark"></i>
         </div>
+        <div class="cart-content">
+            <div class="cart-pic">
+                <img src="assets/images/products/Hair-Wax.png" alt="">
+            </div>
+            <div class="cart-info">
+                <p><b>Hair Wax</b><br>PKR 1500</p>
+            </div>
+            <div class="multiply">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="cart-price">
+                <input type="number" value="1">
+            </div>
+            <div class="cart-total">
+                <p><b>Total</b><br>PKR 1500</p>
+            </div>
+            <div class="del">
+                <i class="fa-solid fa-trash"></i>
+            </div>
+        </div>
     </div>
-</div>
-<!-- ==========Mobile Nav END========== -->
+    <!-- ==========Cart Container End========== -->
 
-<!-- ==========Cart Container Start========== -->
-<div class="cart-container">
-    <div class="closeCart">
-        <i class="fa-solid fa-xmark"></i>
-    </div>
-    <div class="cart-content">
-        <div class="cart-pic">
-            <img src="assets/images/products/Hair-Wax.png" alt="">
+    <!-- ==========Cart Container End========== -->
+    <div class="about-container" style="margin-top: 4%;">
+        <div class="heading">
+            <h2>About Us</h2>
+            <div class="underline">
+                <div class="ubox"></div>
+                <div class="uline"></div>
+            </div>
         </div>
-        <div class="cart-info">
-            <p><b>Hair Wax</b><br>PKR 1500</p>
-        </div>
-        <div class="multiply">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-        <div class="cart-price">
-            <input type="number" value="1">
-        </div>
-        <div class="cart-total">
-            <p><b>Total</b><br>PKR 1500</p>
-        </div>
-        <div class="del">
-            <i class="fa-solid fa-trash"></i>
-        </div>
-    </div>
-</div>
-<!-- ==========Cart Container End========== -->
+        <p>Toyo Toys is a premium toy brand that brings <br> creativity and fun to life. We design high-quality
+            <br>and innovative toys that inspire children's imagination <br>and make their playtime even more
+            exciting.
+        </p>
 
-<script src="../assets/js/jquery-3.7.1.js"></script>
-<script src="../assets/js/script.js"></script>
+        <div class="about">
+            <div class="team">
+                <div class="team-info">
+                    <div class="heading">
+                        <h2>Our Team</h2>
+                        <div class="underline">
+                            <div class="ubox"></div>
+                            <div class="uline"></div>
+                        </div>
+                    </div>
+                    <p> Our passionate and creative team is dedicated to <br> designing the best toys
+                        that bring joy to every child. <br>
+                        With years of experience and a deep understanding <br>of children's needs,
+                        our team ensures every toy <br>is fun, safe, and inspiring!</p>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" id="wrapper">
+                        <div class="swiper-slide">
+                            <div class="teamCard">
+                                <img src="../assets/images/users/team1.jpg" alt="">
+                                <h3>John Doe</h3>
+                                <h4>Owner</h4>
+                                <div class="action">
+                                    <a href="" class="chat">Message Now</a>
+                                    <div class="icons">
+                                        <i class="fab fa-facebook"></i>
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-instagram"></i>
+                                        <i class="fab fa-linkedin"></i>
+                                        <i class="fab fa-youtube"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="teamCard">
+                                <img src="../assets/images/users/team2.jpg" alt="">
+                                <h3>Emma Johnsons</h3>
+                                <h4>Store Manager</h4>
+                                <div class="action">
+                                    <a href="" class="chat">Message Now</a>
+                                    <div class="icons">
+                                        <i class="fab fa-facebook"></i>
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-instagram"></i>
+                                        <i class="fab fa-linkedin"></i>
+                                        <i class="fab fa-youtube"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="teamCard">
+                                <img src="../assets/images/users/team3.jpg" alt="">
+                                <h3>Bob Lee</h3>
+                                <h4>Product Specialist</h4>
+                                <div class="action">
+                                    <a href="" class="chat">Message Now</a>
+                                    <div class="icons">
+                                        <i class="fab fa-facebook"></i>
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-instagram"></i>
+                                        <i class="fab fa-linkedin"></i>
+                                        <i class="fab fa-youtube"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="teamCard">
+                                <img src="../assets/images/users/team4.jpg" alt="">
+                                <h3>Sophia Turner</h3>
+                                <h4>Customer Service</h4>
+                                <div class="action">
+                                    <a href="" class="chat">Message Now</a>
+                                    <div class="icons">
+                                        <i class="fab fa-facebook"></i>
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-instagram"></i>
+                                        <i class="fab fa-linkedin"></i>
+                                        <i class="fab fa-youtube"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="teamCard">
+                                <img src="../assets/images/users/team5.jpg" alt="">
+                                <h3>David White</h3>
+                                <h4>Marketing Specialist</h4>
+                                <div class="action">
+                                    <a href="" class="chat">Message Now</a>
+                                    <div class="icons">
+                                        <i class="fab fa-facebook"></i>
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-instagram"></i>
+                                        <i class="fab fa-linkedin"></i>
+                                        <i class="fab fa-youtube"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-pagination" id="slider-btn"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="end">
+            <div class="promise">
+                <div class="heading">
+                    <h2>Our Promise</h2>
+                    <div class="underline">
+                        <div class="ubox"></div>
+                        <div class="uline"></div>
+                    </div>
+                </div>
+                <p> At Toyo Toys, we promise to deliver the highest quality <br> toys that not only entertain but also
+                    foster
+                    <br>creativity, learning, and growth in every child. <br>
+                    We are committed to innovation, safety, and <br> fun in every toy we create!
+                </p>
+            </div>
+            <div class="why">
+                <div class="heading">
+                    <h2>Why Choose Toyo Toys</h2>
+                    <div class="underline">
+                        <div class="ubox"></div>
+                        <div class="uline"></div>
+                    </div>
+                </div>
+                <p>Our toys are not just for entertainment <br>but also play a vital role in children's
+                    learning <br>and development.
+                    With safe, durable, and innovative <br> designs,
+                    Toyo Toys is the perfect choice <br>for kids of all age groups! </p>
+            </div>
+        </div>
+        <div class="quote">
+            <em> "Toys are not just playthings; they are the building blocks <br> of a child's imagination and dreams."
+                <br>– Toyo Toys</em>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="../assets/images/logos/logo1.png" alt="" width="100px">
+            </div>
+
+            <div class="footer-top">
+                <div class="links">
+                    <h3>Quick Links<sup><i class="ri-link"></i></sup></h3>
+
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="Product-Page-1.html">Products</a></li>
+                        <li><a href="Gallery-Page.html">Gallery</a></li>
+                        <li><a href="About-Page.html">About Us</a></li>
+                        <li><a href="Contact-Page.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <h3>Services<sup><i class="ri-settings-2-line"></i></sup></h3>
+
+                    <ul>
+                        <li><a href="">Free Delivery</a></li>
+                        <li><a href="">24/7 Customer Support</a></li>
+                        <li><a href="">Secure Payment</a></li>
+                        <li><a href="">Gift Wrapping</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <h3>Categories<sup><i class="ri-archive-stack-line"></i></sup></h3>
+
+                    <ul>
+                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="">Age</a></li>
+                        <li><a href="">Brands</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <h3>Get In Touch<sup><i class="ri-phone-line"></i></sup></h3>
+
+                    <ul>
+                        <li><a href="">Email: contact@ToyoShop.com</a></li>
+                        <li><a href="">Phone:03147769133</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>Copyright &copy; Toyo Toys 2025</p>
+                </div>
+
+                <div class="socials">
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/jquery-3.7.1.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {  // For small screens (mobile)
+                    slidesPerView: 1,
+                },
+                480: {  // Slightly larger screens
+                    slidesPerView: 1,
+                },
+                768: {  // Tablets
+                    slidesPerView: 2,
+                },
+                1024: { // Laptops
+                    slidesPerView: 3,
+                },
+                1200: { // Large screens
+                    slidesPerView: 4,
+                }
+            }
+        });
+    </script>
 </body>
-</html>
 
+</html>

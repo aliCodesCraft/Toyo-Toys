@@ -119,6 +119,10 @@
         width: 110px !important;
         height: 180px !important;
     }
+
+    #bpic{
+        height: 170px;
+    }
 }
 
 
@@ -139,6 +143,10 @@
     .mycard .product-img{
         width: 70px !important;
         height: 125px !important;
+    }
+
+    #bpic{
+        height: 120px;
     }
 
     .product-info{
@@ -364,6 +372,10 @@
     .msg-box{
         width: 345px;
     }
+    .contact-info p{
+        font-size: small;
+        margin-bottom: 7%;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -389,8 +401,19 @@
         width: 250px;
         margin: auto;
     }
+
+    .contact-info p{
+        font-size: smaller;
+        margin-bottom: 15%;
+    }
 }
 
+
+@media screen and (max-width:540px) {
+    .about-container, .team-info, .why, .promise, .end{
+        font-size: 11px;
+    }
+}
 
 
 /*
