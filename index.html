@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Remix Icons -->
+    <!-- Remix Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Swipper CSS -->
+    <!-- Swipper CSS -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- Icon -->
-     <link rel="icon" href="assets/images/logos/logo1.png">
+    <link rel="icon" href="assets/images/logos/logo1.png">
 </head>
 
 <body>
@@ -42,10 +42,9 @@
                 <P><b>FREE SHIPPING</b> THIS WEEK ORDER OVER - 3000 PKR</P>
             </div>
             <div class="currency">
-                <select>
-                    <option value="">PKR</option>
-                    <option value="">USD</option>
-                </select>
+                <ol>
+                    <li><i class="fas fa-map-marker-alt"></i> <small>B49 Patric Street - USA</small></li>
+                </ol>
             </div>
         </div>
 
@@ -54,21 +53,21 @@
             <!-- Logo -->
             <div class="logo">
                 <!-- <h1>Toyo Shop</h1> -->
-                <img src="assets/images/logos/logo1.png" alt="">
+                <a href="index.html"><img src="assets/images/logos/logo1.png" alt=""></a>
             </div>
 
 
             <div class="search-bar">
-                <input type="search" name="" id="" placeholder="Enter Your Search Query"><i
+                <input type="search" name="" id="sbar" placeholder="Enter Your Search Query"><i
                     class="fa-solid fa-magnifying-glass"></i>
             </div>
 
             <!-- User Action -->
             <div class="user-action">
                 <ul>
-                    <li><i class="fa-solid fa-bag-shopping myCart"></i></li><sup class="count">0</sup>
-                    <li><i class="fa-solid fa-user"></i></li>
-                    <li><i class="fa-solid fa-heart"></i></li>
+                    <li><i class="fa-solid fa-bag-shopping myCart"></i><sup class="count">0</sup></li>
+                    <li><i class="fa-solid fa-heart"></i><sup class="count">0</sup></li>
+                    <li><i class="fa-solid fa-moon night"></i></li>
                 </ul>
             </div>
         </div>
@@ -79,7 +78,14 @@
                 <ol>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pages/Product-Pages/Product-Page-1.html">Products</a></li>
-                    <li><a href="pages/Gallery-Page.html">Gallery</a></li>
+                    <li class="down">Categories<i class="ri-arrow-drop-down-line"></i>
+                        <div class="drop">
+                            <ol class="list">
+                                <li><a href="#age">Shop By Age <i class="ri-arrow-drop-right-line"></i></a></li>
+                                <li><a href="#brands">Shop By Brands <i class="ri-arrow-drop-right-line"></i></a></li>
+                            </ol>
+                        </div>
+                    </li>
                     <li><a href="pages/About-Page.html">About Us</a></li>
                     <li><a href="pages/Contact-Page.html">Contact Us</a></li>
                 </ol>
@@ -93,8 +99,8 @@
         <div class="bottom-nav">
             <ol>
                 <li class="bars"><i class="fa-solid fa-bars"></i></li>
-                <li><i class="fa-solid fa-user"></i></li>
-                <li><i class="fa-solid fa-heart"></i></li>
+                <li><i class="fa-solid fa-moon night"></i></li>
+                <li><i class="fa-solid fa-heart"></i><sup class="count">0</sup></li>
                 <li><i class="fa-solid fa-bag-shopping myCart"></i><sup class="count">0</sup></li>
             </ol>
         </div>
@@ -163,9 +169,9 @@
     <div class="heading" id="new">
         <h2>New Arrivals</h2>
         <div class="underline">
-        <div class="ubox"></div>
-        <div class="uline"></div>
-    </div>
+            <div class="ubox"></div>
+            <div class="uline"></div>
+        </div>
     </div>
     <div class="cards">
         <!-- Card-1 -->
@@ -191,7 +197,7 @@
                 </div>
                 <a href="" class="title">Ben-10 Action Figure</a>
                 <div class="price">
-                    <p>PKR 450.00</p>
+                    <p>PKR 1450.00</p>
                 </div>
             </div>
         </div>
@@ -203,7 +209,7 @@
             </div>
             <div class="action-container">
                 <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href="pages/Details Page/DBZ-Details.html"><i class="fa-solid fa-eye"></i></a>
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping addToCart"></i>
                     <i class="fa-solid fa-share"></i>
@@ -219,7 +225,7 @@
                 </div>
                 <a href="" class="title">Goku Action Figure</a>
                 <div class="price">
-                    <p>PKR 1450.00</p>
+                    <p>PKR 980.00</p>
                 </div>
             </div>
         </div>
@@ -230,7 +236,7 @@
             </div>
             <div class="action-container">
                 <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href="pages/Details Page/Lego-Details.html"><i class="fa-solid fa-eye"></i></a>
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping addToCart"></i>
                     <i class="fa-solid fa-share"></i>
@@ -257,7 +263,7 @@
             </div>
             <div class="action-container">
                 <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href="pages/Details Page/Hello-Kitty-Details.html"><i class="fa-solid fa-eye"></i></a>
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping addToCart"></i>
                     <i class="fa-solid fa-share"></i>
@@ -343,7 +349,7 @@
             </div>
             <div class="action-container">
                 <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href="pages/Details Page/Ben10-Details.html"><i class="fa-solid fa-eye"></i></a>
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping addToCart"></i>
                     <i class="fa-solid fa-share"></i>
@@ -371,7 +377,7 @@
             </div>
             <div class="action-container">
                 <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href="pages/Details Page/Lego-Details.html"><i class="fa-solid fa-eye"></i></a>
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping addToCart"></i>
                     <i class="fa-solid fa-share"></i>
@@ -398,7 +404,7 @@
             </div>
             <div class="action-container">
                 <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href="pages/Details Page/Beyblade-Details.html"><i class="fa-solid fa-eye"></i></a>
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping addToCart"></i>
                     <i class="fa-solid fa-share"></i>
@@ -424,7 +430,7 @@
             </div>
             <div class="action-container">
                 <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href="pages/Details Page/Marvel-Details.html"><i class="fa-solid fa-eye"></i></a>
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping addToCart"></i>
                     <i class="fa-solid fa-share"></i>
@@ -450,7 +456,7 @@
             </div>
             <div class="action-container">
                 <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href="pages/Details Page/DBZ-Details.html"><i class="fa-solid fa-eye"></i></a>
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping addToCart"></i>
                     <i class="fa-solid fa-share"></i>
@@ -477,7 +483,7 @@
             </div>
             <div class="action-container">
                 <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href="pages/Details Page/Ben10-Details.html"><i class="fa-solid fa-eye"></i></a>
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping addToCart"></i>
                     <i class="fa-solid fa-share"></i>
@@ -504,7 +510,7 @@
             </div>
             <div class="action-container">
                 <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href="pages/Details Page/Lego-Details.html"><i class="fa-solid fa-eye"></i></a>
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping addToCart"></i>
                     <i class="fa-solid fa-share"></i>
@@ -525,60 +531,6 @@
             </div>
         </div>
 
-        <!-- Card-6 -->
-        <div class="mycard">
-            <div class="product-img">
-                <img src="assets/images/products/Toys/pngwing.com (35).png" alt="">
-            </div>
-            <div class="action-container">
-                <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-bag-shopping addToCart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-            </div>
-            <div class="product-info">
-                <div class="rating">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <a href="" class="title">Mr Bear Stuff Toy</a>
-                <div class="price">
-                    <p>PKR 850.00</p>
-                </div>
-            </div>
-        </div>
-        <!-- Card-7 -->
-        <div class="mycard">
-            <div class="product-img">
-                <img src="assets/images/products/Toys/spidey.png" alt="">
-            </div>
-            <div class="action-container">
-                <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-bag-shopping addToCart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-            </div>
-            <div class="product-info">
-                <div class="rating">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <a href="" class="title">Spiderman Mask</a>
-                <div class="price">
-                    <p>PKR 250.00</p>
-                </div>
-            </div>
-        </div>
         <!-- Card-8 -->
         <div class="mycard">
             <div class="product-img">
@@ -586,7 +538,7 @@
             </div>
             <div class="action-container">
                 <div class="product-action">
-                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href="pages/Details Page/Ben10-Details.html"><i class="fa-solid fa-eye"></i></a>
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping addToCart"></i>
                     <i class="fa-solid fa-share"></i>
@@ -915,22 +867,22 @@
                 clickable: true,
             },
             breakpoints: {
-        320: {  // For small screens (mobile)
-            slidesPerView: 1,
-        },
-        480: {  // Slightly larger screens
-            slidesPerView: 1,
-        },
-        768: {  // Tablets
-            slidesPerView: 2,
-        },
-        1024: { // Laptops
-            slidesPerView: 3,
-        },
-        1200: { // Large screens
-            slidesPerView: 4,
-        }
-    }
+                320: {  // For small screens (mobile)
+                    slidesPerView: 1,
+                },
+                480: {  // Slightly larger screens
+                    slidesPerView: 1,
+                },
+                768: {  // Tablets
+                    slidesPerView: 2,
+                },
+                1024: { // Laptops
+                    slidesPerView: 3,
+                },
+                1200: { // Large screens
+                    slidesPerView: 4,
+                }
+            }
         });
     </script>
 

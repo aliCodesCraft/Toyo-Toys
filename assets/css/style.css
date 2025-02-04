@@ -21,6 +21,13 @@ body{
     background-color: #ffffff;
 }
 
+.dark{
+    background-color: #3a3a3a; /*Body*/
+    background-color: #599ebd; /*Card*/
+    background-color: hsl(326.77deg 84.18% 60.18%); /*Main Theme*/
+    color: hsl(0deg 100% 98.75%); /*Heading*/
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -137,7 +144,16 @@ header .header-top{
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    height: 55px;
+    height: 100px;
+    position: relative;
+}
+
+.navbar ol li{
+    color: hsl(0, 0%, 47%);
+}
+
+.navbar ol li:hover{
+    color: hsl(353, 100%, 78%);
 }
 
 .navbar nav ol li a{
@@ -146,6 +162,39 @@ header .header-top{
 
 .navbar nav ol li a:hover{
     color: hsl(353, 100%, 78%);
+}
+
+.drop{
+    display: none;
+}
+
+.down:hover .drop{
+    display: block;
+}
+
+.navbar .list{
+    position: absolute;
+    gap: 5px;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* background-color: hsl(353, 100%, 78%); */
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.list li a{
+    padding: 5px;
+    /* color: white !important; */
+}
+
+.ageing{
+    position: relative;
+}
+
+.aged{
+    position: absolute;
 }
 
 /*--------------------Bottom Navigation--------------------*/
@@ -352,6 +401,7 @@ a.order{
 /*--------------------Banner--------------------*/
 .banner{
     margin-bottom: 4%;
+
 }
 /*--------------------Product Cards--------------------*/
 .heading{
@@ -993,6 +1043,30 @@ a.chat:hover{
     margin-bottom: 3%;
 }
 
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+  }
+  th, td {
+    padding: 10px;
+  }
+  th {
+    background-color: #f4f4f4;
+  }
+
+  .fa-check{
+    color: green;
+  }
+
+  .fa-times{
+    color: red;
+  }
 
 /*--------------------Footer--------------------*/
 footer{

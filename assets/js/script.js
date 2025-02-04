@@ -5,6 +5,14 @@ function changeImage(smallImage) {
 }
 
 
+$(document).ready(function () {
+    $("#sbar").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $(".mycard").filter(function () {
+            $(this).toggle($(this).find("a").text().toLowerCase().indexOf(value) > -1);
+        });
+    });
+});
 
 
 $(document).ready(function () {

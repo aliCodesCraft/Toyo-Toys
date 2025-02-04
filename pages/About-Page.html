@@ -34,10 +34,9 @@
                 <P><b>FREE SHIPPING</b> THIS WEEK ORDER OVER - 3000 PKR</P>
             </div>
             <div class="currency">
-                <select>
-                    <option value="">PKR</option>
-                    <option value="">USD</option>
-                </select>
+                <ol>
+                    <li><i class="fas fa-map-marker-alt"></i> <small>B49 Patric Street - USA</small></li>
+                </ol>
             </div>
         </div>
 
@@ -58,9 +57,9 @@
             <!-- User Action -->
             <div class="user-action">
                 <ul>
-                    <li><i class="fa-solid fa-user"></i></li>
-                    <li><i class="fa-solid fa-heart"></i></li>
-                    <li><i class="fa-solid fa-bag-shopping myCart"></i></li>
+                    <li><i class="fa-solid fa-bag-shopping myCart"></i><sup class="count">0</sup></li>
+                    <li><i class="fa-solid fa-heart"></i><sup class="count">0</sup></li>
+                    <li><i class="fa-solid fa-moon night"></i></li>
                 </ul>
             </div>
         </div>
@@ -85,9 +84,9 @@
         <div class="bottom-nav">
             <ol>
                 <li class="bars"><i class="fa-solid fa-bars"></i></li>
-                <li><i class="fa-solid fa-user"></i></li>
-                <li><i class="fa-solid fa-heart"></i></li>
-                <li><i class="fa-solid fa-bag-shopping myCart"></i></li>
+                <li><i class="fa-solid fa-moon night"></i></li>
+                <li><i class="fa-solid fa-heart"></i><sup class="count">0</sup></li>
+                                    <li><i class="fa-solid fa-bag-shopping myCart"></i><sup class="count">0</sup></li>
             </ol>
         </div>
     </div>
@@ -128,26 +127,17 @@
         <div class="closeCart">
             <i class="fa-solid fa-xmark"></i>
         </div>
-        <div class="cart-content">
-            <div class="cart-pic">
-                <img src="assets/images/products/Hair-Wax.png" alt="">
-            </div>
-            <div class="cart-info">
-                <p><b>Hair Wax</b><br>PKR 1500</p>
-            </div>
-            <div class="multiply">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <div class="cart-price">
-                <input type="number" value="1">
-            </div>
+        <div class="cart-actions">
             <div class="cart-total">
-                <p><b>Total</b><br>PKR 1500</p>
-            </div>
-            <div class="del">
-                <i class="fa-solid fa-trash"></i>
+                <h3>Total Amount:&nbsp;<span id="total">
+                        <p>0</p>
+                    </span></h3>
             </div>
         </div>
+        <div class="cart-box">
+        </div>
+        <br><br><br>
+        <a class="order" href="">Check Out</a>
     </div>
     <!-- ==========Cart Container End========== -->
 
@@ -325,7 +315,7 @@
 
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="Product-Page-1.html">Products</a></li>
+                        <li><a href="../pages/Product-Pages/Product-Page-1.html">Products</a></li>
                         <li><a href="Gallery-Page.html">Gallery</a></li>
                         <li><a href="About-Page.html">About Us</a></li>
                         <li><a href="Contact-Page.html">Contact Us</a></li>
