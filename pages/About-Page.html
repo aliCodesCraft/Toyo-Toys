@@ -24,8 +24,8 @@
         <div class="header-top">
             <div class="socials">
                 <ul>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://X.com"><i class="fa-brands fa-twitter"></i></a></li>
                     <li><i class="fa-brands fa-instagram"></i></li>
                     <li><i class="fa-brands fa-linkedin"></i></li>
                 </ul>
@@ -58,7 +58,7 @@
             <div class="user-action">
                 <ul>
                     <li><i class="fa-solid fa-bag-shopping myCart"></i><sup class="count">0</sup></li>
-                    <li><i class="fa-solid fa-heart"></i><sup class="count">0</sup></li>
+                    <li><i class="fa-solid fa-heart like"></i><sup class="county">0</sup></li>
                     <li><i class="fa-solid fa-moon night"></i></li>
                 </ul>
             </div>
@@ -85,8 +85,8 @@
             <ol>
                 <li class="bars"><i class="fa-solid fa-bars"></i></li>
                 <li><i class="fa-solid fa-moon night"></i></li>
-                <li><i class="fa-solid fa-heart"></i><sup class="count">0</sup></li>
-                                    <li><i class="fa-solid fa-bag-shopping myCart"></i><sup class="count">0</sup></li>
+                <li><i class="fa-solid fa-heart like"></i><sup class="county">0</sup></li>
+                <li><i class="fa-solid fa-bag-shopping myCart"></i><sup class="count">0</sup></li>
             </ol>
         </div>
     </div>
@@ -109,8 +109,8 @@
             </div>
             <div class="socials">
                 <ul>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://X.com"><i class="fa-brands fa-twitter"></i></a></li>
                     <li><i class="fa-brands fa-instagram"></i></li>
                     <li><i class="fa-brands fa-linkedin"></i></li>
                 </ul>
@@ -141,7 +141,22 @@
     </div>
     <!-- ==========Cart Container End========== -->
 
-    <!-- ==========Cart Container End========== -->
+    <!-- ==========Heart Container Start========== -->
+    <div class="heart-container">
+        <div class="closeHeart">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-actions">
+            <div class="cart-total">
+                <h3>Liked Products</h3>
+            </div>
+        </div>
+        <div class="heart-box">
+        </div>
+    </div>
+    <!-- ==========Heart Container End========== -->
+
+    <!-- ==========About Container Start========== -->
     <div class="about-container" style="margin-top: 4%;">
         <div class="heading">
             <h2>About Us</h2>
@@ -189,7 +204,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="swiper-slide">
                             <div class="teamCard">
                                 <img src="../assets/images/users/team2.jpg" alt="">
@@ -207,7 +222,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="swiper-slide">
                             <div class="teamCard">
                                 <img src="../assets/images/users/team3.jpg" alt="">
@@ -225,7 +240,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="swiper-slide">
                             <div class="teamCard">
                                 <img src="../assets/images/users/team4.jpg" alt="">
@@ -243,7 +258,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="swiper-slide">
                             <div class="teamCard">
                                 <img src="../assets/images/users/team5.jpg" alt="">
@@ -261,7 +276,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="swiper-pagination" id="slider-btn"></div>
                 </div>
@@ -360,8 +375,8 @@
 
                 <div class="socials">
                     <ul>
-                        <li><i class="fa-brands fa-facebook"></i></li>
-                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://X.com"><i class="fa-brands fa-twitter"></i></a></li>
                         <li><i class="fa-brands fa-instagram"></i></li>
                         <li><i class="fa-brands fa-linkedin"></i></li>
                     </ul>
@@ -387,19 +402,19 @@
                 clickable: true,
             },
             breakpoints: {
-                320: {  // For small screens (mobile)
+                320: {  
                     slidesPerView: 1,
                 },
-                480: {  // Slightly larger screens
+                480: {  
                     slidesPerView: 1,
                 },
-                768: {  // Tablets
+                768: {  
                     slidesPerView: 2,
                 },
-                1024: { // Laptops
+                1024: {
                     slidesPerView: 3,
                 },
-                1200: { // Large screens
+                1200: { 
                     slidesPerView: 4,
                 }
             }

@@ -1,10 +1,11 @@
+// Image Chaner
 let mainImage = document.getElementById("mainImage")
 
 function changeImage(smallImage) {
     mainImage.src = smallImage.src;
 }
 
-
+// SearchBar
 $(document).ready(function () {
     $("#sbar").on("keyup", function () {
         var value = $(this).val().toLowerCase();
@@ -14,7 +15,7 @@ $(document).ready(function () {
     });
 });
 
-
+// Navbar Toggle
 $(document).ready(function () {
     $(".bars").click(function () {
         $(".mobile-container").show(300);
@@ -25,6 +26,7 @@ $(document).ready(function () {
     })
 })
 
+// Cart Container
 $(document).ready(function () {
     $(".myCart").click(function () {
         $(".cart-container").toggle(150);
@@ -34,6 +36,7 @@ $(document).ready(function () {
     })
 })
 
+// Add To Cart
 $(document).ready(function () {
     let totalPrice = 0;
     let itemCount = 0;
@@ -88,33 +91,59 @@ $(document).ready(function () {
 
 });
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 10,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    breakpoints: {
-        320: {  // For small screens (mobile)
-            slidesPerView: 1,
-        },
-        480: {  // Slightly larger screens
-            slidesPerView: 1,
-        },
-        768: {  // Tablets
-            slidesPerView: 2,
-        },
-        1024: { // Laptops
-            slidesPerView: 3,
-        },
-        1200: { // Large screens
-            slidesPerView: 4,
-        }
-    }
+// Likes Container
+
+$(document).ready(function () {
+    $(".like").click(function () {
+        $(".heart-container").toggle(150);
+    })
+    $(".closeHeart").click(function () {
+        $(".heart-container").hide(150);
+    })
+})
+
+// Likes Products
+$(document).ready(function () {
+    let itemCount = 0;
+
+    $(".addLike").click(function () {
+        let myCard = $(this).closest(".mycard");
+
+        let itemPic = myCard.find("img").attr("src");
+        let itemName = myCard.find("a.title").text();
+        let itemPrice = parseFloat(myCard.find(".price p").text().replace("PKR", "").trim());
+
+        let item = `        <div class="cart-content">
+            <div class="cart-pic">
+                <img src="${itemPic}" alt="">
+            </div>
+            <div class="cart-info">
+                <p>${itemName}</p>
+            </div>
+            <div class="cart-total">
+                <p>PKR ${itemPrice}</p>
+            </div>
+            <div class="del">
+                <i class="fa-solid fa-trash"></i>
+            </div>
+        </div>
+        `;
+        $(".heart-box").append(item)
+        alert("added to like list");
+
+        // Total count
+        itemCount++;
+        $(".county").text(itemCount);
+
+    });
+
+    // Removing Items
+    $(".heart-box").on("click", ".del", function () {
+
+        $(this).closest(".cart-content").remove();
+
+        itemCount--;
+        $(".count").text(itemCount);
+    });
 
 });
