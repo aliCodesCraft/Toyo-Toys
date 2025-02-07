@@ -143,7 +143,14 @@ $(document).ready(function () {
         $(this).closest(".cart-content").remove();
 
         itemCount--;
-        $(".count").text(itemCount);
+        $(".county").text(itemCount);
     });
 
 });
+
+
+$(document).ready(function(){
+    $(".night").click(function(){
+        $("body, footer, .mycard, .heading, .userCard").toggleClass("dark")
+    })
+})

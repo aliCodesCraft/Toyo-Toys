@@ -22,11 +22,45 @@ body{
 }
 
 .dark{
-    background-color: #3a3a3a; /*Body*/
-    background-color: #599ebd; /*Card*/
-    background-color: hsl(326.77deg 84.18% 60.18%); /*Main Theme*/
-    color: hsl(0deg 100% 98.75%); /*Heading*/
+    background-color: #474547; 
+   
 }
+
+.mycard.dark{
+    background-color: #05648f; 
+    color: white;
+}
+
+.heading.dark{
+    color: hsl(0deg 100% 98.75%); 
+}
+
+footer.dark{
+    background-color: #05648f;
+}
+
+.userCard{
+    background-color: #05648f;
+    color: white;
+}
+
+
+#lightVdo{
+    display: block;
+}
+
+#darkVdo{
+    display: none;
+}
+
+.dark #lightVdo{
+    display: none;
+}
+
+.dark #darkVdo{
+    display: block;
+}
+
 
 html{
     scroll-behavior: smooth;
@@ -154,7 +188,6 @@ header .header-top{
     justify-content: center;
     align-items: center;
     height: 100px;
-    position: relative;
 }
 
 .navbar ol li{
@@ -173,6 +206,26 @@ header .header-top{
     color: hsl(353, 100%, 78%);
 }
 
+.drop{
+    position: relative;
+}
+
+.down{
+    position: absolute;
+    width: 150px;
+    flex-direction: column;
+    margin-top: -18px;
+    transform: translate(-20%);
+    display: none !important;
+}
+
+.down .list{
+    margin-bottom: -54px;
+}
+
+.drop:hover .down{
+    display: flex !important;
+}
 
 /*--------------------Bottom Navigation--------------------*/
 .bottom-nav {
@@ -417,6 +470,7 @@ a.order{
 /*--------------------Banner--------------------*/
 .banner{
     margin-bottom: 4%;
+    margin-top: 7px;
 
 }
 /*--------------------Product Cards--------------------*/
@@ -854,7 +908,7 @@ a.order{
     width: 400px;
 }
 
-.ordernow, .download {
+.ordernow, .download, .compare {
     background-color: hsl(353, 100%, 78%);
     border: none;
     padding: 5px 10px;
@@ -863,6 +917,10 @@ a.order{
     cursor: pointer;
     margin-top: 10px;
     font-size: large;
+}
+
+.ordernow:hover, .download:hover, .compare:hover {
+    background-color: hsl(353, 100%, 61%);
 }
 
 .info a {
@@ -992,9 +1050,6 @@ a.order{
     margin-top: 22px;
 }
 
-.box1 .input-box textarea:focus{
-    border: 2px solid hsl(353, 100%, 78%);
-}
 
 .box2{
     width: 400px;
@@ -1012,6 +1067,27 @@ label{
     margin-left: 9px;
     margin-top: 5px;
 }
+
+.msg-box input{
+    width: 98% !important;
+    padding: 10px;
+
+}
+
+#mini{
+    width: 158px;
+    margin-top: 2%;
+}
+
+.msg-box textarea:focus{
+    border: 2px solid hsl(353, 100%, 78%);
+}
+
+.msg-box input:focus{
+    border: 2px solid hsl(353, 100%, 78%);
+    outline: none;
+}
+
 
 
 /*--------------------About--------------------*/

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<!-- CSS Link -->
+<link rel="stylesheet" href="../assets/css/style.css">
+<!-- Media Queries Link -->
+<link rel="stylesheet" href="../assets/css/responsive.css">
+<!-- Font Awesome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <!-- ==========Header Start========== -->
+    <header>
+
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="socials">
+                <ul>
+                    <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://X.com"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+            </div>
+            <div class="discount">
+                <P><b>FREE SHIPPING</b> THIS WEEK ORDER OVER - 3000 PKR</P>
+            </div>
+            <div class="currency">
+                <ol>
+                    <li><i class="fas fa-map-marker-alt"></i> <small>B49 Patric Street - USA</small></li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Header Main -->
+        <div class="header-main">
+            <!-- Logo -->
+            <div class="logo">
+                <!-- <h1>Toyo Shop</h1> -->
+                <img src="../assets/images/logos/logo1.png" alt="">
+            </div>
+
+
+            <div class="search-bar">
+                <input type="search" name="" id="" placeholder="Enter Your Search Query"><i
+                    class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!-- User Action -->
+            <div class="user-action">
+                <ul>
+                    <li><i class="fa-solid fa-bag-shopping myCart"></i><sup class="count">0</sup></li>
+                    <li><i class="fa-solid fa-moon night"></i></li>
+                    <li><i class="fa-solid fa-heart like"></i><sup class="county">0</sup></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Header - Nabar -->
+        <div class="navbar">
+            <nav>
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/Product-Pages/Product-Page-1.html">Products</a></li>
+                    <li><a href="Gallery-Page.html">Gallery</a></li>
+                    <li class="drop">Categories <i class="ri-arrow-drop-down-line"></i>
+                        <ol class="down">
+                            <li class="list"><a href="../index.html#brands">Shop by Brands <i class="ri-arrow-drop-right-line"></i></a></li>
+                            <li class="list2"><a href="../index.html#age">Shop by Age <i class="ri-arrow-drop-right-line"></i></a></li>
+                        </ol>
+                    </li>
+                    <li><a href="../pages/About-Page.html">About Us</a></li>
+                    <li><a href="../pages/Contact-Page.html">Contact Us</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <!-- ==========Header End========== -->
+
+    <!-- ==========Bottom Nav Start========== -->
+    <div class="bottom-container">
+        <div class="bottom-nav">
+            <ol>
+                <li class="bars"><i class="fa-solid fa-bars"></i></li>
+                <li><i class="fa-solid fa-moon night"></i></li>
+                <li><i class="fa-solid fa-heart like"></i><sup class="county">0</sup></li>
+                <li><i class="fa-solid fa-bag-shopping myCart"></i><sup class="count">0</sup></li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- ==========Mobile Nav Start========== -->
+    <div class="mobile-container">
+        <div class="mobile-nav">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="assets/images/logos/logo1.png" alt="">
+            </div>
+            <div class="tabs">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/Product-Pages/Product-Page-1.html">Products</a></li>
+                    <li><a href="../pages/Gallery-Page.html">Gallery</a></li>
+                    <li><a href="About-Page.html">About Us</a></li>
+                    <li><a href="../pages/Contact-Page.html">Contact Us</a></li>
+                </ol>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://X.com"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+            </div>
+            <div class="cross-nav">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+    <!-- ==========Mobile Nav END========== -->
+
+    <!-- ==========Cart Container Start========== -->
+    <div class="cart-container">
+        <div class="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-actions">
+            <div class="cart-total">
+                <h3>Total Amount:&nbsp;<span id="total">
+                        <p>0</p>
+                    </span></h3>
+            </div>
+        </div>
+        <div class="cart-box">
+        </div>
+        <a class="order" href="../Details Page/Checkout.html">Buy Now</a>
+    </div>
+    <!-- ==========Cart Container End========== -->
+
+        <!-- ==========Heart Container Start========== -->
+        <div class="heart-container">
+            <div class="closeHeart">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="cart-actions">
+                <div class="cart-total">
+                    <h3>Liked Products</h3>
+                </div>
+            </div>
+            <div class="heart-box">
+            </div>
+        </div>
+        <!-- ==========Heart Container End========== -->
+    <div class="heading">
+        <h2>Comparison</h2>
+        <div class="underline">
+            <div class="ubox"></div>
+            <div class="uline"></div>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Toyo Toys</th>
+                <th>Other Toy Shops</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Quality Control Before Shipping</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>International Shipping Options</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Age-Specific Recommendations</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Non-Toxic and Safe Materials</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Battery-Powered or Manual</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Hassle-Free Return Policy</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Comprehensive Warranty Coverage</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Customer Rating and Feedback</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Environmentally-Friendly Packaging</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Adherence to International Safety Standards</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Competitive Pricing</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Personalization or Customization Options</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Wide Variety of Toy Selection</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Stock Availability and Restocking Speed</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+            <tr>
+                <td>Responsive and Supportive Customer Service</td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="../assets/js/jquery-3.7.1.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout Page</title>
+<!-- CSS Link -->
+<link rel="stylesheet" href="../../assets/css/style.css">
+<!-- Media Queries Link -->
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+<!-- Font Awesome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Remix Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Icon -->
+<link rel="Icon" href="../../assets/images/logos/logo1.png">
+
+<body>
+    <!-- ==========Header Start========== -->
+    <header>
+
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="socials">
+                <ul>
+                    <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://X.com"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+            </div>
+            <div class="discount">
+                <P><b>FREE SHIPPING</b> THIS WEEK ORDER OVER - 3000 PKR</P>
+            </div>
+            <div class="currency">
+                <ol>
+                    <li><i class="fas fa-map-marker-alt"></i> <small>B49 Patric Street - USA</small></li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Header Main -->
+        <div class="header-main">
+            <!-- Logo -->
+            <div class="logo">
+                <!-- <h1>Toyo Shop</h1> -->
+                <img src="../../assets/images/logos/logo1.png" alt="">
+            </div>
+
+
+            <div class="search-bar">
+                <input type="search" name="" id="sbar" placeholder="Enter Your Search Query"><i
+                    class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!-- User Action -->
+            <div class="user-action">
+                <ul>
+                    <li><i class="fa-solid fa-bag-shopping myCart"></i><sup class="count">0</sup></li>
+                    <li><i class="fa-solid fa-heart like"></i><sup class="county">0</sup></li>
+                    <li><i class="fa-solid fa-moon night"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Header - Nabar -->
+        <div class="navbar">
+            <nav>
+                <ol>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../Product-Pages/Product-Page-1.html">Products</a></li>
+                    <li><a href="../Gallery-Page.html">Gallery</a></li>
+                    <li class="drop">Categories <i class="ri-arrow-drop-down-line"></i>
+                        <ol class="down">
+                            <li class="list"><a href="../../index.html#brands">Shop by Brands <i
+                                        class="ri-arrow-drop-right-line"></i></a></li>
+                            <li class="list2"><a href="../../index.html#age">Shop by Age <i
+                                        class="ri-arrow-drop-right-line"></i></a></li>
+                        </ol>
+                    </li>
+                    <li><a href="../About-Page.html">About Us</a></li>
+                    <li><a href="../Contact-Page.html">Contact Us</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <!-- ==========Header End========== -->
+
+    <!-- ==========Bottom Nav Start========== -->
+    <div class="bottom-container">
+        <div class="bottom-nav">
+            <ol>
+                <li class="bars"><i class="fa-solid fa-bars"></i></li>
+                <li><i class="fa-solid fa-moon night"></i></li>
+                <li><i class="fa-solid fa-heart like"></i><sup class="county">0</sup></li>
+                <li><i class="fa-solid fa-bag-shopping myCart"></i><sup class="count">0</sup></li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- ==========Mobile Nav Start========== -->
+    <div class="mobile-container">
+        <div class="mobile-nav">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="assets/images/logos/logo1.png" alt="">
+            </div>
+            <div class="tabs">
+                <ol>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../Product-Pages/Product-Page-1.html">Products</a></li>
+                    <li><a href="../Gallery-Page.html">Gallery</a></li>
+                    <li><a href="../About-Page.html">About Us</a></li>
+                    <li><a href="../Contact-Page.html">Contact Us</a></li>
+                </ol>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://X.com"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+            </div>
+            <div class="cross-nav">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+    <!-- ==========Mobile Nav END========== -->
+
+    <!-- ==========Cart Container Start========== -->
+    <div class="cart-container">
+        <div class="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-actions">
+            <div class="cart-total">
+                <h3>Total Amount:&nbsp;<span id="total">
+                        <p>0</p>
+                    </span></h3>
+            </div>
+        </div>
+        <div class="cart-box">
+        </div>
+        <a class="order" href="../Details Page/Checkout.html">Buy Now</a>
+    </div>
+    <!-- ==========Cart Container End========== -->
+
+    <!-- ==========Heart Container Start========== -->
+    <div class="heart-container">
+        <div class="closeHeart">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-actions">
+            <div class="cart-total">
+                <h3>Liked Products</h3>
+            </div>
+        </div>
+        <div class="heart-box">
+        </div>
+    </div>
+    <!-- ==========Heart Container End========== -->
+
+    <!-- ==========Details Container Container========== -->
+
+    <div class="heading" style="margin-top: 5%;">
+        <h2>Checkout</h2>
+        <div class="underline">
+            <div class="ubox"></div>
+            <div class="uline"></div>
+        </div>
+    </div>
+
+    <div class="contact-form" id="Checkout">
+        <div class="box1">
+            <form>
+                <!-- First Name Input -->
+                <label>Name</label>
+                <div class="input-box">
+                    <input type="text" placeholder="First Name" required pattern="^[A-Za-z]+( [A-Za-z]+){0,2}$"
+                        title="Kindly use alphabets only">
+                </div>
+                <!-- ast Name Input -->
+                <label>Name</label>
+                <div class="input-box">
+                    <input type="text" placeholder="Last Name" required pattern="^[A-Za-z]+( [A-Za-z]+){0,2}$"
+                        title="Kindly use alphabets only">
+                </div>
+                <!-- Number Input -->
+                <label>Number</label>
+                <div class="input-box">
+                    <input type="text" placeholder="Number" required pattern="^[0-9]+" title="Kindly use numbers only">
+                </div>
+                <!-- Gmail Input -->
+                <label>Gmail</label>
+                <div class="input-box">
+                    <input type="text" placeholder="Gmail" required pattern="^[a-zA-Z0-9._a-zA-Z0-9]+@gmail\.com$"
+                        title="forexample123@gmail.com">
+                </div>
+                <!-- ast Name Input -->
+                <label>State</label>
+                <div class="input-box">
+                    <input type="text" placeholder="State" required pattern="^[A-Za-z]+( [A-Za-z]+){0,2}$"
+                        title="Kindly use alphabets only">
+                </div>
+                <!-- Zip Code Input -->
+                <label>Zip Code</label>
+                <div class="input-box">
+                    <input type="text" placeholder="Zip Code" required pattern="^[0-9]+"
+                        title="Kindly use numbers only">
+                </div>
+                <!-- Card Input -->
+                <label>Card</label>
+                <div class="msg-box">
+                    <input type="text" placeholder="Credit/Debit Card" required minlength="13">
+                </div>
+                
+                <!-- Issue Date Input -->
+                <label>Issue</label>
+                <div class="input-box"  id="mini">
+                    <input type="datetime-local" placeholder="Isue Date" required>
+                </div>
+
+                <!-- Expire Date Input -->
+                <label>Expire</label>
+                <div class="input-box" id="mini">
+                    <input type="datetime-local" placeholder="Expire Date" required>
+                </div>
+
+                <!-- CV Code Input -->
+                <label>CV Code</label>
+                <div class="input-box" id="mini">
+                    <input type="text" placeholder="CV Code" required pattern="^[0-9]+"
+                        title="Kindly use numbers only">
+                </div>
+
+                <!-- Address Input -->
+                <label>Address</label>
+                <div class="msg-box">
+                    <textarea name="" id="" rows="4" placeholder="Address" required></textarea>
+                </div>
+
+
+                <div class="msg-btn">
+                    <input type="submit" value="Place Your Order">
+                </div>
+
+            </form>
+        </div>
+
+        <div class="box2">
+            <img src="../../assets/images/users/pay.png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="../../assets/images/logos/logo1.png" alt="" width="100px">
+            </div>
+
+            <div class="footer-top">
+                <div class="links">
+                    <h3>Quick Links<sup><i class="ri-link"></i></sup></h3>
+
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../Product-Pages/Product-Page-1.html">Products</a></li>
+                        <li><a href="../Gallery-Page.html">Gallery</a></li>
+                        <li><a href="../About-Page.html">About Us</a></li>
+                        <li><a href="../Contact-Page.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <h3>Services<sup><i class="ri-settings-2-line"></i></sup></h3>
+
+                    <ul>
+                        <li><a href="">Free Delivery</a></li>
+                        <li><a href="">24/7 Customer Support</a></li>
+                        <li><a href="">Secure Payment</a></li>
+                        <li><a href="">Gift Wrapping</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <h3>Categories<sup><i class="ri-archive-stack-line"></i></sup></h3>
+
+                    <ul>
+                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="">Age</a></li>
+                        <li><a href="">Brands</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <h3>Get In Touch<sup><i class="ri-phone-line"></i></sup></h3>
+
+                    <ul>
+                        <li><a href="">Email: contact@ToyoShop.com</a></li>
+                        <li><a href="">Phone:03147769133</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>Copyright &copy; Toyo Toys 2025</p>
+                </div>
+
+                <div class="socials">
+                    <ul>
+                        <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://X.com"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/jquery-3.7.1.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>
