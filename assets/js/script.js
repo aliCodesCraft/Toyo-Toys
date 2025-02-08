@@ -151,6 +151,6 @@ $(document).ready(function () {
 
 $(document).ready(function(){
     $(".night").click(function(){
-        $("body, footer, .mycard, .heading, .userCard").toggleClass("dark")
+        $("body, footer, .mycard, .heading, .userCard, .swiper-pagination-bullet-active").toggleClass("dark")
     })
 })

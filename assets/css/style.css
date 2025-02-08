@@ -21,47 +21,6 @@ body{
     background-color: #ffffff;
 }
 
-.dark{
-    background-color: #474547; 
-   
-}
-
-.mycard.dark{
-    background-color: #05648f; 
-    color: white;
-}
-
-.heading.dark{
-    color: hsl(0deg 100% 98.75%); 
-}
-
-footer.dark{
-    background-color: #05648f;
-}
-
-.userCard{
-    background-color: #05648f;
-    color: white;
-}
-
-
-#lightVdo{
-    display: block;
-}
-
-#darkVdo{
-    display: none;
-}
-
-.dark #lightVdo{
-    display: none;
-}
-
-.dark #darkVdo{
-    display: block;
-}
-
-
 html{
     scroll-behavior: smooth;
 }
@@ -131,7 +90,7 @@ header .header-top{
     align-items: center;
     height: 85px;
     color: hsl(0, 0%, 47%);
-    border: 1px solid hsl(0, 0%, 93%);
+    border-bottom: 1px solid hsl(0, 0%, 93%);
 }
 
 
@@ -158,6 +117,7 @@ header .header-top{
     border: none;
     outline: none;
     width: 400px;
+    background: none;
 }
 
 
@@ -1159,29 +1119,71 @@ a.chat:hover{
 }
 
 
-table{
-    width: 100%;
+
+
+ /* Toy Images Section */
+ .toys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    gap: 30px;
+}
+
+.toy img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.toy p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
     border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
     text-align: center;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
-  }
-  th, td {
-    padding: 10px;
-  }
-  th {
-    background-color: #f4f4f4;
-  }
+th {
+    background-color: hsl(353, 100%, 78%);
+    color: white;
+}
 
-  .fa-check{
-    color: green;
-  }
+td {
+    font-size: 16px;
+    background-color: #fff;
+    color: hsl(0, 0%, 26%);
+}
 
-  .fa-times{
-    color: red;
-  }
+.dark th{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    
+    .toy img {
+        width: 80px;
+    }
+
+    th, td{
+        font-size: small;
+    }
+}
 
 /*--------------------Footer--------------------*/
 footer{
@@ -1245,4 +1247,217 @@ footer .footer-container ul li{
 .footer-container .copyright{
     color: hsl(353, 100%, 78%);
     font-weight: 500;
+}
+
+/*  */
+
+
+.dark{
+    background-color: hsl(349.09deg 100% 78.43%);
+    
+}
+
+.dark .header-top{
+    color: white;
+}
+
+.dark .header-top .socials ul li{
+    background-color: white !important;
+}
+
+.dark .header-top .socials ul li i{
+    color: hsl(353, 100%, 78%);
+}
+
+.dark .header-top .socials ul li:hover{
+    background-color: hsl(165.97deg 46.67% 67.65%) !important;
+}
+.dark .header-top .socials ul li:hover i{
+    background-color: hsl(165.97deg 46.67% 67.65%) !important;
+    color: hsl(353, 100%, 78%) !important;
+}
+
+
+
+.dark .user-action i{
+    color: white !important;
+}
+
+.dark .user-action li:hover{
+    background-color: hsl(165.97deg 46.67% 67.65%) !important;
+}
+
+
+.dark li:hover i{
+    color: hsl(353, 100%, 78%) !important;
+    background-color: transparent;
+}
+
+.dark .header-top a{
+    color: white;
+}
+
+.dark .navbar li, .dark .navbar li a{
+    color: white;
+}
+
+.dark .navbar li:hover, .dark .navbar li a:hover{
+    color: hsl(165.97deg 46.67% 67.65%);
+}
+
+.dark .contact-form .input-box input:focus, .dark .contact-form .msg-box textarea:hover{
+    border: 2px solid hsl(165.97deg 46.67% 67.65%);
+}
+
+.dark .contact-form .box1 input[type="submit"]:hover {
+    background-color: hsl(165.97deg 46.67% 67.65%);
+    
+}
+
+.dark .contact-info{
+    color: white !important;
+}
+
+.dark .contact-info li i{
+    color: hsl(165.97deg 46.67% 67.65%) !important;
+}
+
+.dark .nextPage a{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+}
+
+.dark .bottom-nav ol{
+    background-color: hsl(353, 100%, 78%);
+}
+
+.dark .bottom-nav ol li i{
+    color: white;
+}
+.dark .bottom-nav ol li i:hover{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+}
+
+.dark .count, .dark .county{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+}
+
+.dark .cart-container, .dark .heart-container{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+}
+
+.mycard.dark{
+    background-color: hsl(165.97deg 46.67% 67.65%); 
+}
+
+.heading.dark{
+    color: hsl(0deg 100% 98.75%); 
+}
+
+footer.dark{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+}
+
+.userCard.dark{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+    color: white;
+}
+
+.userCard.dark h1{
+    color: white;
+}
+
+.userCard.dark img{
+    border: 10px solid hsl(353, 100%, 78%) !important;
+}
+
+.dark .swiper-pagination-bullet-active{
+    background-color: hsl(165.97deg 46.67% 67.65%) !important;
+}
+
+.dark .ubox{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+}
+
+.dark .uline{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+}
+
+.dark .big-img, .dark .small-box{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+}
+
+.dark .details-container .info{
+    color: white;
+}
+
+.dark .ordernow, .dark .download, .dark .compare{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+}
+
+.dark .ordernow:hover, .dark .download:hover, .dark .compare:hover{
+    background-color: hsl(166, 94%, 36%);
+}
+
+#lightVdo{
+    display: block;
+}
+
+#darkVdo{
+    display: none;
+}
+
+.dark #lightVdo{
+    display: none;
+}
+
+.dark #darkVdo{
+    display: block;
+}
+
+.dark .search-bar i{
+    color: white;
+}
+
+.dark .search-bar input::placeholder{
+    color: white;
+}
+
+.dark .active{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+    color: white;
+}
+
+.dark .page-btn .b1{
+    color: white;
+    border: 1px solid white;
+}
+
+.dark .page-btn .b1:hover{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+    color: white;
+}
+
+.dark .page-btn #pre{
+    color: white;
+    border: 1px solid white;
+}
+
+.dark .page-btn #pre:hover{
+    background-color: hsl(165.97deg 46.67% 67.65%);
+}
+
+.dark .ri-map-pin-line{
+    color: hsl(165.97deg 46.67% 67.65%) !important;
+}
+
+.dark .location-text{
+    color: white;
+}
+
+.dark .location iframe{
+    border: 4px solid hsl(165.97deg 46.67% 67.65%);
+}
+
+.dark .service-item{
+    color: white;
 }
